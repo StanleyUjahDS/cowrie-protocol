@@ -1,0 +1,383 @@
+/* ===========================
+   VALUE CARD
+=========================== */
+
+
+.value-card {
+
+
+    width:100%;
+
+
+    padding:2.5rem;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:1.5rem;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--border-color);
+
+
+    border-radius:28px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease,
+
+    border-color .35s ease;
+
+
+}
+
+
+
+
+
+/* ===========================
+   GLOW EFFECT
+=========================== */
+
+
+.value-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:180px;
+
+
+    height:180px;
+
+
+    top:-80px;
+
+
+    right:-80px;
+
+
+    background:var(--accent-color);
+
+
+    opacity:.12;
+
+
+    filter:blur(70px);
+
+
+    pointer-events:none;
+
+
+}
+
+
+
+
+
+
+
+.value-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:var(--accent-color);
+
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   ICON
+=========================== */
+
+
+.value-icon {
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:18px;
+
+
+    background:
+
+    rgba(126,221,208,.15);
+
+
+    color:var(--accent-color);
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    transition:
+
+    transform .35s ease,
+
+    background .35s ease;
+
+
+}
+
+
+
+
+
+.value-card:hover .value-icon {
+
+
+    transform:
+
+    translateY(-5px)
+
+    rotate(6deg);
+
+
+    background:
+
+    rgba(126,221,208,.25);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.value-content {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:.8rem;
+
+
+}
+
+
+
+
+
+.value-content h3 {
+
+
+    margin:0;
+
+
+    font-size:1.4rem;
+
+
+    font-weight:800;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+.value-content p {
+
+
+    margin:0;
+
+
+    line-height:1.7;
+
+
+    color:var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   VARIANTS
+=========================== */
+
+
+.value-card.gold {
+
+
+    border-color:
+
+    rgba(212,146,36,.35);
+
+}
+
+
+
+.value-card.gold .value-icon {
+
+
+    color:var(--gold);
+
+
+    background:
+
+    rgba(212,146,36,.12);
+
+
+}
+
+
+
+
+
+.value-card.green {
+
+
+    border-color:
+
+    rgba(0,169,145,.35);
+
+}
+
+
+
+
+
+.value-card.green .value-icon {
+
+
+    color:var(--green);
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .value-card {
+
+
+        padding:2rem;
+
+
+    }
+
+
+
+    .value-content h3 {
+
+
+        font-size:1.2rem;
+
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:480px){
+
+
+    .value-card {
+
+
+        padding:1.5rem;
+
+
+        border-radius:22px;
+
+
+    }
+
+
+
+    .value-icon {
+
+
+        width:52px;
+
+
+        height:52px;
+
+
+    }
+
+
+}

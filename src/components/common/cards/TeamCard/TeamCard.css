@@ -1,0 +1,467 @@
+/* =====================
+   TEAM CARD
+===================== */
+
+
+.team-card {
+
+    position:relative;
+
+    padding:4.5rem 1.5rem 1.8rem;
+
+    background:var(--bg-secondary);
+
+    border:1px solid var(--border-color);
+
+    border-radius:28px;
+
+    text-align:center;
+
+    overflow:visible;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+}
+
+
+
+
+/* =====================
+   HOVER
+===================== */
+
+
+.team-card:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.18);
+
+    border-color:var(--accent-color);
+
+}
+
+
+
+
+
+
+/* =====================
+   IMAGE WRAPPER
+===================== */
+
+
+.team-avatar-wrapper {
+
+    position:absolute;
+
+    top:-60px;
+
+    left:50%;
+
+    translate:-50% 0;
+
+
+    width:120px;
+
+    height:120px;
+
+
+    padding:5px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--accent-color),
+        transparent
+    );
+
+
+    transition:
+
+    transform .35s ease;
+
+}
+
+
+
+
+
+/* =====================
+   IMAGE CONTAINER
+===================== */
+
+
+.team-avatar {
+
+
+    width:110px;
+
+    height:110px;
+
+
+    border-radius:50%;
+
+
+    overflow:hidden;
+
+
+    background:var(--bg-primary);
+
+
+    border:
+
+    5px solid var(--bg-primary);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   IMAGE
+===================== */
+
+
+.team-avatar img {
+
+
+    width:100%;
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    object-position:center;
+
+
+    display:block;
+
+
+    transition:
+
+    transform .4s ease;
+
+
+}
+
+
+
+
+
+/* =====================
+   IMAGE HOVER
+===================== */
+
+
+.team-card:hover .team-avatar-wrapper {
+
+
+    transform:
+
+    translateY(-8px)
+
+    scale(1.08);
+
+}
+
+
+
+
+.team-card:hover .team-avatar img {
+
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+
+
+
+/* =====================
+   CONTENT
+===================== */
+
+
+.team-info {
+
+
+    width:100%;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.team-info h3 {
+
+
+    margin:0;
+
+
+    font-size:1.2rem;
+
+
+    font-weight:800;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+
+
+.team-role {
+
+
+    margin:.6rem 0 1.2rem;
+
+
+    font-size:.9rem;
+
+
+    font-weight:600;
+
+
+    color:var(--accent-color);
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   SOCIAL
+===================== */
+
+
+.team-x-link {
+
+
+    width:38px;
+
+    height:38px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:var(--bg-tertiary);
+
+
+    color:var(--text-primary);
+
+
+    transition:
+
+    transform .3s ease,
+
+    background .3s ease,
+
+    color .3s ease;
+
+
+}
+
+
+
+.team-x-link:hover {
+
+
+    background:var(--accent-color);
+
+
+    color:white;
+
+
+    transform:
+
+    translateY(-4px)
+
+    scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   GRID
+===================== */
+
+
+.team-grid {
+
+
+    width:100%;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(230px,1fr));
+
+
+    gap:5rem 2rem;
+
+
+    max-width:1100px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   TABLET
+===================== */
+
+
+@media(max-width:768px){
+
+
+    .team-card {
+
+        padding-top:4.2rem;
+
+    }
+
+
+    .team-avatar-wrapper {
+
+
+        width:110px;
+
+        height:110px;
+
+
+        top:-55px;
+
+
+    }
+
+
+    .team-avatar {
+
+
+        width:100px;
+
+        height:100px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* =====================
+   MOBILE
+===================== */
+
+
+@media(max-width:480px){
+
+
+    .team-card {
+
+
+        border-radius:22px;
+
+        padding-left:1rem;
+
+        padding-right:1rem;
+
+
+    }
+
+
+
+    .team-info h3 {
+
+
+        font-size:1.1rem;
+
+
+    }
+
+
+}

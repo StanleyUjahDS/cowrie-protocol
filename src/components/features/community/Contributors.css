@@ -1,0 +1,97 @@
+/* ===========================
+   CONTRIBUTORS
+=========================== */
+
+
+.contributors {
+
+
+    width:100%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:2rem;
+
+
+}
+
+
+
+
+.contributors h2 {
+
+
+    margin:0;
+
+
+    font-size:clamp(2rem,3vw,2.8rem);
+
+
+}
+
+
+
+
+.contributors-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(260px,1fr));
+
+
+    gap:2rem;
+
+
+}
+
+
+
+
+
+.contributors-grid .team-card {
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+.contributors-grid .team-card:hover {
+
+
+    transform:translateY(-6px);
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.contributors-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+}

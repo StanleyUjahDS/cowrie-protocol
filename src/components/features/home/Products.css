@@ -1,0 +1,360 @@
+/* ===========================
+   PRODUCTS SECTION
+=========================== */
+
+
+.products {
+
+    width:100%;
+
+    padding:6rem 0;
+
+    box-sizing:border-box;
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+
+    border-radius:80px;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        transparent 0%,
+
+        var(--bg-primary) 25%,
+
+        var(--bg-secondary) 100%
+
+    );
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   BACKGROUND GLOW
+=========================== */
+
+
+.products::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:700px;
+
+    height:450px;
+
+
+    bottom:-250px;
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+
+
+    background:
+
+    radial-gradient(
+
+        ellipse,
+
+        rgba(0,169,145,.20),
+
+        transparent 70%
+
+    );
+
+
+    filter:blur(80px);
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.products-content {
+
+
+    width:100%;
+
+
+    max-width:1280px;
+
+
+    margin:0 auto;
+
+
+    padding:0 6%;
+
+
+    box-sizing:border-box;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+
+.products-header {
+
+
+    max-width:750px;
+
+
+    margin:0 auto 4rem;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.products-header h2 {
+
+
+    margin:0 0 1rem;
+
+
+    font-size:
+
+    clamp(2.2rem,5vw,3.2rem);
+
+
+    font-weight:900;
+
+
+    letter-spacing:-1px;
+
+
+    line-height:1.1;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+.products-header p {
+
+
+    margin:0;
+
+
+    font-size:1.1rem;
+
+
+    line-height:1.8;
+
+
+    color:var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GRID
+=========================== */
+
+
+.products-grid {
+
+
+    width:100%;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    gap:3rem;
+
+
+    align-items:stretch;
+
+
+}
+
+
+
+
+
+
+
+.products-grid > * {
+
+
+    height:100%;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.products {
+
+
+    padding:5rem 0;
+
+    border-radius:50px;
+
+}
+
+
+
+.products-content {
+
+
+    padding:0 5%;
+
+}
+
+
+
+.products-grid {
+
+
+    grid-template-columns:1fr;
+
+    gap:2rem;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:500px){
+
+
+.products {
+
+
+    padding:4rem 0;
+
+    border-radius:35px;
+
+}
+
+
+
+.products-content {
+
+
+    padding:0 1rem;
+
+}
+
+
+
+.products-header {
+
+
+    margin-bottom:2.5rem;
+
+}
+
+
+
+.products-header h2 {
+
+
+    font-size:2rem;
+
+}
+
+
+
+.products-header p {
+
+
+    font-size:.95rem;
+
+}
+
+
+
+.products-grid {
+
+
+    gap:1.5rem;
+
+}
+
+
+}

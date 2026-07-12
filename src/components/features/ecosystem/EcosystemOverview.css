@@ -1,0 +1,467 @@
+/* ===========================
+   ECOSYSTEM OVERVIEW
+=========================== */
+
+
+.ecosystem-overview {
+
+    width:100%;
+
+}
+
+
+
+
+
+/* ===========================
+   SWIPER
+=========================== */
+
+
+.ecosystem-overview .swiper {
+
+    width:100%;
+
+    padding:3rem 0 5rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   SLIDE EFFECT
+=========================== */
+
+
+.ecosystem-overview .swiper-slide {
+
+
+    display:flex;
+
+    justify-content:center;
+
+
+    opacity:.45;
+
+
+    transform:scale(.86);
+
+
+    transition:.45s ease;
+
+
+}
+
+
+
+
+.ecosystem-overview 
+.swiper-slide-active {
+
+
+    opacity:1;
+
+
+    transform:scale(1);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARD
+=========================== */
+
+
+.ecosystem-overview-card {
+
+
+    width:100%;
+
+
+    min-height:480px;
+
+
+    padding:2.5rem;
+
+
+    border-radius:35px;
+
+
+    background:
+
+
+    linear-gradient(
+
+        160deg,
+
+        transparent,
+
+        rgba(126,221,208,.12)
+
+    );
+
+
+    border:1px solid var(--border);
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:space-between;
+
+
+    gap:2rem;
+
+
+    overflow:hidden;
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+
+
+.ecosystem-overview-card:hover {
+
+
+    transform:translateY(-10px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.ecosystem-overview-content {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:1rem;
+
+
+}
+
+
+
+
+.ecosystem-overview-content h2 {
+
+
+    margin:0;
+
+
+    font-size:
+
+    clamp(1.6rem,3vw,2.4rem);
+
+
+    font-weight:800;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+.ecosystem-overview-content p {
+
+
+    margin:0;
+
+
+    line-height:1.8;
+
+
+    color:var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+
+.ecosystem-overview-image {
+
+
+    width:100%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.ecosystem-overview-image img {
+
+
+    width:100%;
+
+
+    max-width:320px;
+
+
+    height:200px;
+
+
+    object-fit:contain;
+
+
+    transition:.45s ease;
+
+
+}
+
+
+
+
+
+.ecosystem-overview-card:hover 
+.ecosystem-overview-image img {
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+
+.ecosystem-overview 
+.swiper-button-next,
+.ecosystem-overview 
+.swiper-button-prev {
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+.ecosystem-overview 
+.swiper-button-next:hover,
+.ecosystem-overview 
+.swiper-button-prev:hover {
+
+
+    transform:scale(1.15);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   PAGINATION
+=========================== */
+
+
+.ecosystem-overview 
+.swiper-pagination-bullet {
+
+
+    width:10px;
+
+    height:10px;
+
+    background:var(--text-muted);
+
+    opacity:.4;
+
+
+}
+
+
+
+
+
+.ecosystem-overview 
+.swiper-pagination-bullet-active {
+
+
+    width:28px;
+
+    border-radius:20px;
+
+    background:var(--gold);
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1024px){
+
+
+    .ecosystem-overview-card {
+
+
+        min-height:430px;
+
+        padding:2rem;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .ecosystem-overview .swiper {
+
+
+        padding-bottom:4rem;
+
+
+    }
+
+
+
+    .ecosystem-overview-card {
+
+
+        min-height:400px;
+
+
+        border-radius:28px;
+
+
+    }
+
+
+
+    .ecosystem-overview-image img {
+
+
+        height:160px;
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .ecosystem-overview-content h2 {
+
+
+        font-size:1.5rem;
+
+
+    }
+
+
+
+    .ecosystem-overview-content p {
+
+
+        font-size:.95rem;
+
+
+    }
+
+
+}

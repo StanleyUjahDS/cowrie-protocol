@@ -1,0 +1,221 @@
+/* ===========================
+   ECOSYSTEM BENEFITS
+=========================== */
+
+
+.ecosystem-benefits {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GRID
+=========================== */
+
+
+.ecosystem-benefits-grid {
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARD
+=========================== */
+
+
+.ecosystem-benefit-card {
+
+
+    padding:2rem;
+
+
+    border-radius:28px;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--border);
+
+
+
+    transition:
+
+    transform .35s ease,
+
+    border-color .35s ease,
+
+    box-shadow .35s ease;
+
+
+}
+
+
+
+
+
+
+.ecosystem-benefit-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TITLE
+=========================== */
+
+
+.ecosystem-benefit-card h3 {
+
+
+    margin:0 0 1rem;
+
+
+    font-size:1.25rem;
+
+
+    font-weight:700;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+
+.ecosystem-benefit-card p {
+
+
+    margin:0;
+
+
+    color:var(--text-muted);
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:900px){
+
+
+    .ecosystem-benefits-grid {
+
+
+        grid-template-columns:repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .ecosystem-benefits {
+
+
+        gap:2rem;
+
+
+    }
+
+
+
+    .ecosystem-benefits-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+    .ecosystem-benefit-card {
+
+
+        padding:1.5rem;
+
+
+    }
+
+
+}

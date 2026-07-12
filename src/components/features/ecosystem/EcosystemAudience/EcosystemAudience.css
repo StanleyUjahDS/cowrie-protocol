@@ -1,0 +1,66 @@
+/* ===========================
+   ECOSYSTEM AUDIENCE
+=========================== */
+
+.ecosystem-audience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* HEADER */
+
+.ecosystem-audience-header {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ecosystem-audience-header h2 {
+    margin-bottom: 1rem;
+}
+
+.ecosystem-audience-header p {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* GRID */
+
+.ecosystem-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* CARD */
+
+.ecosystem-audience-card {
+    padding: 2rem;
+    border-radius: 28px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+}
+
+.ecosystem-audience-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.ecosystem-audience-card p {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .ecosystem-audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ecosystem-audience-card {
+        padding: 1.5rem;
+    }
+}

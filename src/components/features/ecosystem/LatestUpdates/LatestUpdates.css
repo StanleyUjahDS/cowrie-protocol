@@ -1,0 +1,128 @@
+/* ===========================
+   LATEST UPDATES SECTION
+=========================== */
+
+.latest-updates {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3.5rem;
+
+}
+
+
+
+
+
+/* ===========================
+   BLOG GRID
+=========================== */
+
+
+.latest-updates-grid {
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3, minmax(0,1fr));
+
+    gap:2rem;
+
+    align-items:stretch;
+
+}
+
+
+
+
+
+
+/* ===========================
+   CARD WRAPPER
+=========================== */
+
+
+.latest-updates-grid > div {
+
+    height:100%;
+
+    display:flex;
+
+}
+
+
+
+
+
+
+.latest-updates-grid .recent-card {
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1100px){
+
+
+    .latest-updates-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:700px){
+
+
+    .latest-updates {
+
+        gap:2rem;
+
+    }
+
+
+
+    .latest-updates-grid {
+
+        grid-template-columns:1fr;
+
+        gap:1.5rem;
+
+    }
+
+
+}

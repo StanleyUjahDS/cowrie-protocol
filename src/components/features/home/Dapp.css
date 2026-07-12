@@ -1,0 +1,261 @@
+/* ===========================
+   DAPP SECTION
+=========================== */
+
+
+.dapp {
+
+    width:100%;
+
+    padding:7rem 0;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    border-radius:80px;
+
+
+    isolation:isolate;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+
+.dapp::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+
+    radial-gradient(
+
+        circle at 50% 0%,
+
+        rgba(0,169,145,.25),
+
+        transparent 40%
+
+    ),
+
+
+    linear-gradient(
+
+        135deg,
+
+        #050505,
+
+        #111111
+
+    );
+
+
+    z-index:-2;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GOLD GLOW
+=========================== */
+
+
+.dapp::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:500px;
+
+    height:500px;
+
+
+    bottom:-250px;
+
+    right:-150px;
+
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(212,146,36,.25),
+
+        transparent 70%
+
+    );
+
+
+    filter:blur(80px);
+
+
+    z-index:-1;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   WRAPPER
+=========================== */
+
+
+.dapp-wrapper {
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   PRODUCT CARD OVERRIDE
+=========================== */
+
+
+.dapp .product-card {
+
+
+    width:100%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+    background:transparent;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE ENHANCEMENT
+=========================== */
+
+
+.dapp img {
+
+
+    filter:
+
+    drop-shadow(
+
+        0 35px 60px rgba(0,0,0,.5)
+
+    );
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:900px){
+
+
+    .dapp {
+
+
+        padding:5rem 0;
+
+
+        border-radius:50px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:600px){
+
+
+    .dapp {
+
+
+        padding:3.5rem 0;
+
+
+        border-radius:35px;
+
+
+    }
+
+
+}

@@ -1,0 +1,220 @@
+/* ===========================
+   ECOSYSTEM HERO SECTION
+=========================== */
+
+
+.ecosystem-hero {
+
+    width:100%;
+
+    position:relative;
+
+    padding:5rem 0;
+
+    border-radius:60px;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+
+    background:
+
+    linear-gradient(
+
+        to bottom,
+
+        transparent,
+
+        rgba(126,221,208,.08)
+
+    );
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GLOW
+=========================== */
+
+
+.ecosystem-hero::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:650px;
+
+
+    height:400px;
+
+
+    bottom:-220px;
+
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+
+    background:
+
+
+    radial-gradient(
+
+        ellipse,
+
+        rgba(126,221,208,.22),
+
+        transparent 70%
+
+    );
+
+
+    filter:blur(80px);
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARD LAYER
+=========================== */
+
+
+.ecosystem-hero > div {
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE FLOAT EFFECT
+=========================== */
+
+
+.ecosystem-hero img {
+
+
+    animation:
+
+    ecosystemFloat 6s ease-in-out infinite;
+
+
+}
+
+
+
+
+
+@keyframes ecosystemFloat {
+
+
+    0% {
+
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+
+        transform:translateY(-12px);
+
+    }
+
+
+    100% {
+
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:900px){
+
+
+    .ecosystem-hero {
+
+
+        padding:4rem 0;
+
+        border-radius:40px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:600px){
+
+
+    .ecosystem-hero {
+
+
+        padding:3rem 0;
+
+        border-radius:28px;
+
+
+    }
+
+
+}

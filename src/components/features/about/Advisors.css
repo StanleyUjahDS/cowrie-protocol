@@ -1,0 +1,67 @@
+.advisors-section{
+
+padding:80px 8%;
+
+}
+
+
+.advisors-section h2{
+
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+
+}
+
+
+.advisor-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+
+
+.advisor-card{
+
+padding:30px;
+
+border-radius:20px;
+
+background:var(--bg-secondary);
+
+border:1px solid var(--border-color);
+
+text-align:center;
+
+transition:.3s ease;
+
+}
+
+
+
+.advisor-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.advisor-card h3{
+
+margin-bottom:10px;
+
+color:var(--text-primary);
+
+}
+
+
+
+.advisor-card p{
+
+color:var(--text-secondary);
+
+}

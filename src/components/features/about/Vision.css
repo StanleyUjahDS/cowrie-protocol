@@ -1,0 +1,30 @@
+.vision {
+
+    padding: 100px 8%;
+
+}
+
+
+.vision-content {
+
+    max-width: 800px;
+    margin:auto;
+    text-align:center;
+
+}
+
+
+.vision h2 {
+
+    font-size:3rem;
+    margin-bottom:20px;
+
+}
+
+
+.vision p {
+
+    font-size:1.1rem;
+    line-height:1.8;
+
+}

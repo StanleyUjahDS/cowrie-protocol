@@ -1,0 +1,153 @@
+/* ===========================
+   MAIN LAYOUT
+=========================== */
+
+.layout {
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+}
+
+
+
+/* ===========================
+   BODY
+=========================== */
+
+.layout-body {
+
+    flex:1;
+
+    width:100%;
+
+    padding-top:60px; /* space below navbar */
+
+}
+
+
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.layout-body main {
+
+    width:100%;
+
+}
+
+
+
+/* ===========================
+   PAGE CONTENT
+=========================== */
+
+.page-content {
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+/* ===========================
+   SIDEBAR DOCUMENTATION
+=========================== */
+
+
+.layout-body:has(aside){
+
+    display:flex;
+
+}
+
+
+
+.layout-body aside {
+
+    width:260px;
+
+    flex-shrink:0;
+
+    border-right:1px solid var(--border);
+
+    padding:30px;
+
+    background:var(--card-bg);
+
+}
+
+
+
+
+
+.layout-body:has(aside) main {
+
+    flex:1;
+
+}
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:900px){
+
+
+    .layout-body {
+
+        padding-top:80px;
+
+    }
+
+
+
+    .layout-body:has(aside){
+
+        flex-direction:column;
+
+    }
+
+
+    .layout-body aside {
+
+        width:100%;
+
+        border-right:none;
+
+        border-bottom:1px solid var(--border);
+
+    }
+
+}
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:600px){
+
+
+    .layout-body {
+
+        padding-top:70px;
+
+    }
+
+}

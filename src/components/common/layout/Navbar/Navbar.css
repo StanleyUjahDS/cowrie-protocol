@@ -1,0 +1,576 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+
+.navbar {
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+
+    background:
+
+    color-mix(
+        in srgb,
+        var(--bg-primary) 88%,
+        transparent
+    );
+
+
+    backdrop-filter:blur(18px);
+
+
+    border-bottom:1px solid var(--border);
+
+
+    transition:.3s ease;
+
+}
+
+
+
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+
+.navbar-container {
+
+    width:100%;
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+
+    padding:18px 8%;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+
+/* ===========================
+   LOGO
+=========================== */
+
+
+.navbar-logo {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.6rem;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+.logo-image {
+
+    width:34px;
+
+    height:34px;
+
+    object-fit:contain;
+
+    transition:.3s ease;
+
+}
+
+
+
+
+
+.navbar-logo:hover .logo-image {
+
+
+    transform:
+
+    rotate(-8deg)
+
+    scale(1.08);
+
+
+}
+
+
+
+
+
+.navbar-logo span {
+
+
+    font-size:1.15rem;
+
+
+    font-weight:800;
+
+
+    letter-spacing:-.3px;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   DESKTOP LINKS
+=========================== */
+
+
+.navbar-links {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:2rem;
+
+
+}
+
+
+
+
+
+.navbar-links a {
+
+
+    position:relative;
+
+
+    text-decoration:none;
+
+
+    color:var(--text-secondary);
+
+
+    font-size:.95rem;
+
+
+    font-weight:500;
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+
+
+.navbar-links a:hover {
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+
+.navbar-links a::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:0;
+
+
+    bottom:-8px;
+
+
+    width:0;
+
+
+    height:2px;
+
+
+    background:var(--gold);
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+
+
+.navbar-links a:hover::after {
+
+
+    width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   LAUNCH BUTTON
+=========================== */
+
+
+.navbar-links button {
+
+
+    border-radius:999px;
+
+
+    padding:12px 24px;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE MENU BUTTON
+=========================== */
+
+
+.navbar-menu {
+
+
+    display:none;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border:none;
+
+
+    background:transparent;
+
+
+    color:var(--text-primary);
+
+
+    cursor:pointer;
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+
+
+.navbar-menu:hover {
+
+
+    transform:scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1000px){
+
+
+    .navbar-container {
+
+
+        padding:18px 5%;
+
+
+    }
+
+
+
+
+    .navbar-links {
+
+
+        gap:1.3rem;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE MENU
+=========================== */
+
+
+@media(max-width:768px){
+
+
+
+    .navbar-container {
+
+
+        position:relative;
+
+
+    }
+
+
+
+
+
+    .navbar-menu {
+
+
+        display:flex;
+
+
+    }
+
+
+
+
+
+
+
+    .navbar-links {
+
+
+        position:absolute;
+
+
+        top:100%;
+
+
+        left:0;
+
+
+        width:100%;
+
+
+
+        padding:2rem;
+
+
+
+        box-sizing:border-box;
+
+
+
+
+        background:
+
+        color-mix(
+
+            in srgb,
+
+            var(--bg-primary) 90%,
+
+            transparent
+
+        );
+
+
+
+
+        backdrop-filter:blur(18px);
+
+
+
+
+        border-bottom:
+
+        1px solid var(--border);
+
+
+
+
+        display:flex;
+
+
+
+        flex-direction:column;
+
+
+
+        align-items:center;
+
+
+
+        gap:1.8rem;
+
+
+
+
+
+        opacity:0;
+
+
+
+        visibility:hidden;
+
+
+
+        pointer-events:none;
+
+
+
+
+
+        transform:
+
+        translateY(-20px);
+
+
+
+
+
+        transition:
+
+
+        opacity .35s ease,
+
+
+        transform .35s ease,
+
+
+        visibility .35s ease;
+
+
+
+    }
+
+
+
+
+
+
+
+    .navbar-links.active {
+
+
+        opacity:1;
+
+
+        visibility:visible;
+
+
+        pointer-events:auto;
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+
+
+
+
+
+    .navbar-links a {
+
+
+        font-size:1.1rem;
+
+
+    }
+
+
+
+
+
+
+
+    .navbar-links button {
+
+
+        width:220px;
+
+
+    }
+
+
+
+}

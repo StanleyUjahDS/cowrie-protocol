@@ -1,0 +1,261 @@
+/* ===========================
+   ECOSYSTEM CARD
+=========================== */
+
+
+.ecosystem-card {
+
+    width:100%;
+
+    max-width:1200px;
+
+    display:flex;
+
+    justify-content:center;
+
+    background:transparent;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.ecosystem-content {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:1.5rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TITLE
+=========================== */
+
+
+.ecosystem-content h2 {
+
+    margin:0;
+
+    max-width:900px;
+
+    font-size:clamp(2.25rem,5vw,4rem);
+
+    line-height:1.08;
+
+    font-weight:900;
+
+    letter-spacing:-1px;
+
+    color:var(--text-primary);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+
+.ecosystem-content p {
+
+    max-width:700px;
+
+    margin:0;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:var(--text-secondary);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+
+.ecosystem-button {
+
+    margin-top:.5rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+
+.ecosystem-image {
+
+    width:100%;
+
+    max-width:900px;
+
+    margin-top:1.5rem;
+
+}
+
+
+
+
+
+
+
+.ecosystem-image img {
+
+    width:100%;
+
+    height:auto;
+
+    max-height:500px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:900px){
+
+
+    .ecosystem-content h2 {
+
+
+        font-size:clamp(2rem,6vw,3.5rem);
+
+
+    }
+
+
+
+    .ecosystem-image img {
+
+
+        max-height:360px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:600px){
+
+
+    .ecosystem-card {
+
+
+        border-radius:30px;
+
+
+    }
+
+
+
+    .ecosystem-content {
+
+
+        gap:1.25rem;
+
+
+    }
+
+
+
+    .ecosystem-content p {
+
+
+        font-size:.95rem;
+
+
+    }
+
+
+
+    .ecosystem-image {
+
+
+        margin-top:1rem;
+
+
+    }
+
+
+
+    .ecosystem-image img {
+
+
+        max-height:280px;
+
+
+    }
+
+
+}

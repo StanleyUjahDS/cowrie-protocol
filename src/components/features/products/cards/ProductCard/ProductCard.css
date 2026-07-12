@@ -1,0 +1,468 @@
+/* ===========================
+   PRODUCT CARD
+=========================== */
+
+
+.product-card {
+
+    width:100%;
+
+    padding:30px;
+
+    border-radius:32px;
+
+    background:var(--card-bg);
+
+    text-align:center;
+
+    color:var(--text-primary);
+
+    position:relative;
+
+    overflow:visible;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+
+    transition:none;
+
+}
+
+
+
+
+
+/* ===========================
+   GRADIENT OVERLAY
+=========================== */
+
+
+.product-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:var(--gradient-card);
+
+
+    opacity:.18;
+
+
+    border-radius:inherit;
+
+
+    z-index:0;
+
+
+    pointer-events:none;
+
+}
+
+
+
+
+
+/* ===========================
+   CONTENT LAYER
+=========================== */
+
+
+.product-card > * {
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+/* ===========================
+   TITLE
+=========================== */
+
+
+.product-card h2 {
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    margin:0 0 .6rem;
+
+    color:var(--text-primary);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+
+.product-card p {
+
+    width:100%;
+
+    max-width:500px;
+
+
+    margin:0 0 1rem;
+
+
+    line-height:1.65;
+
+
+    color:var(--text-muted);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+
+.product-image {
+
+    width:100%;
+
+
+    max-width:420px;
+
+
+    height:auto;
+
+
+    object-fit:contain;
+
+
+    margin:1rem 0 1.5rem;
+
+
+    cursor:pointer;
+
+
+    transition:
+
+    transform .45s ease,
+
+    filter .45s ease;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE HOVER
+=========================== */
+
+
+.product-image:hover {
+
+
+    transform:
+
+    translateY(-8px)
+
+    scale(1.05);
+
+
+
+    filter:
+
+    drop-shadow(
+        0 20px 35px rgba(126,221,208,.25)
+    );
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   BUTTON AREA
+=========================== */
+
+
+.card-buttons {
+
+    width:100%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:12px;
+
+
+    flex-wrap:wrap;
+
+
+    position:relative;
+
+
+    z-index:20;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   DROPDOWN PROTECTION
+=========================== */
+
+
+.card-buttons button {
+
+    position:relative;
+
+    z-index:30;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GRIOT THEME
+=========================== */
+
+
+.product-card.griot {
+
+
+    background:
+
+
+    linear-gradient(
+
+        to bottom,
+
+
+        var(--card-bg) 0%,
+
+
+        var(--card-bg) 45%,
+
+
+        rgba(126,221,208,.05) 65%,
+
+
+        rgba(0,169,145,.18) 100%
+
+
+    );
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   BUILDERS OASIS THEME
+=========================== */
+
+
+.product-card.builders {
+
+
+    background:
+
+
+    linear-gradient(
+
+        to bottom,
+
+
+        var(--card-bg) 0%,
+
+
+        var(--card-bg) 45%,
+
+
+        rgba(255,120,80,.05) 65%,
+
+
+        rgba(220,70,50,.18) 100%
+
+
+    );
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   INVESTORS THEME
+=========================== */
+
+
+.product-card.investors {
+
+
+    background:var(--card-bg);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .product-card {
+
+
+        padding:25px;
+
+
+        border-radius:28px;
+
+
+    }
+
+
+
+    .product-card h2 {
+
+
+        font-size:1.35rem;
+
+
+    }
+
+
+
+    .product-image {
+
+
+        max-width:350px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:480px){
+
+
+    .product-card {
+
+
+        padding:20px;
+
+
+        border-radius:24px;
+
+
+    }
+
+
+
+    .product-card h2 {
+
+
+        font-size:1.2rem;
+
+
+    }
+
+
+
+    .product-card p {
+
+
+        font-size:.95rem;
+
+
+    }
+
+
+
+    .card-buttons {
+
+
+        flex-direction:column;
+
+
+    }
+
+
+}

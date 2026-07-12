@@ -1,0 +1,60 @@
+/* ===========================
+   SOCIAL
+=========================== */
+
+
+.core-team-socials {
+
+    margin-top:1.5rem;
+
+}
+
+
+
+.core-team-social {
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.4rem;
+
+    border-radius:50%;
+
+    background:var(--bg-tertiary);
+
+    color:var(--text-primary);
+
+    transition:.3s ease;
+
+}
+
+
+
+
+
+.core-team-social:hover {
+
+    background:var(--accent-color);
+
+    color:white;
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+
+.core-team-social span {
+
+    display:none;
+
+}

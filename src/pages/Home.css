@@ -1,0 +1,114 @@
+/* ===========================
+   HOME PAGE
+=========================== */
+
+
+.home {
+
+    width:100%;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--bg-primary);
+
+}
+
+
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+
+.home section {
+
+    width:100%;
+
+    position:relative;
+
+}
+
+
+
+/* ===========================
+   SECTION SPACING
+=========================== */
+
+
+.home section + section {
+
+    margin-top:3.5rem;
+
+}
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1024px){
+
+
+    .home section + section {
+
+        margin-top:3rem;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .home section + section {
+
+        margin-top:2.5rem;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+
+@media(max-width:480px){
+
+
+    .home section + section {
+
+        margin-top:2rem;
+
+    }
+
+
+}

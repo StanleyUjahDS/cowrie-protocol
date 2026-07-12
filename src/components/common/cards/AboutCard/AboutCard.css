@@ -1,0 +1,332 @@
+/* ===========================
+   ABOUT CARD
+=========================== */
+
+
+.about-card {
+
+    width:100%;
+
+    max-width:600px;
+
+    color:var(--text-primary);
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow);
+
+    backdrop-filter:blur(20px);
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+
+    transition:
+
+    transform .3s ease,
+
+    box-shadow .3s ease,
+
+    border-color .3s ease;
+
+}
+
+
+
+
+
+/* ===========================
+   HOVER
+=========================== */
+
+
+.about-card:hover {
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.18);
+
+
+    border-color:
+
+    var(--gold);
+
+}
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.about-content {
+
+    width:100%;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.2rem;
+
+}
+
+
+
+
+
+.about-text {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+
+
+
+/* ===========================
+   TITLE
+=========================== */
+
+
+.about-content h3 {
+
+    margin:0;
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+    font-weight:800;
+
+    color:var(--text-primary);
+
+}
+
+
+
+
+
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+
+.about-content p {
+
+    margin:0;
+
+    color:var(--text-muted);
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+
+.about-buttons {
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   IMAGE CONTAINER
+=========================== */
+
+
+.about-image {
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+
+.about-image img {
+
+    width:100%;
+
+    height:auto;
+
+    max-height:500px;
+
+    object-fit:contain;
+
+    display:block;
+
+
+    transition:
+
+    transform .45s ease;
+
+}
+
+
+
+
+
+.about-image img:hover {
+
+
+    transform:
+
+    scale(1.05);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .about-content {
+
+        padding:30px;
+
+    }
+
+
+
+    .about-content h3 {
+
+        font-size:1.7rem;
+
+    }
+
+
+
+    .about-image img {
+
+        max-height:380px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:480px){
+
+
+    .about-card {
+
+        border-radius:24px;
+
+    }
+
+
+
+    .about-content {
+
+        padding:20px;
+
+    }
+
+
+
+    .about-content h3 {
+
+        font-size:1.4rem;
+
+    }
+
+
+
+    .about-buttons {
+
+        flex-direction:column;
+
+    }
+
+
+
+    .about-buttons .ui-button {
+
+        width:100%;
+
+    }
+
+
+
+    .about-image img {
+
+        max-height:280px;
+
+    }
+
+
+}

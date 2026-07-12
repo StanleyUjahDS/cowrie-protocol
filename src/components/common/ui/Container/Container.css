@@ -1,0 +1,145 @@
+/* ===========================
+   GLOBAL CONTAINER
+=========================== */
+
+
+.container {
+
+    width:100%;
+
+    max-width:1600px;
+
+    margin:0 auto;
+
+    padding-left:6%;
+
+    padding-right:6%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+
+/* ===========================
+   CONTENT CONTAINER
+=========================== */
+
+
+.container-content {
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding-left:6%;
+
+    padding-right:6%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+
+
+/* ===========================
+   LARGE DESKTOP
+=========================== */
+
+
+@media(min-width:1600px){
+
+
+    .container,
+    .container-content {
+
+        padding-left:5%;
+
+        padding-right:5%;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1024px){
+
+
+    .container,
+    .container-content {
+
+        padding-left:5%;
+
+        padding-right:5%;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .container,
+    .container-content {
+
+        padding-left:1.5rem;
+
+        padding-right:1.5rem;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+
+@media(max-width:480px){
+
+
+    .container,
+    .container-content {
+
+        padding-left:1rem;
+
+        padding-right:1rem;
+
+    }
+
+
+}

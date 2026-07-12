@@ -1,0 +1,314 @@
+:root {
+
+
+/* ===========================
+   LIGHT MODE
+=========================== */
+
+
+/* Background */
+
+--bg-primary: #FFFFFF;
+
+--bg-secondary: #FBF4E9;
+
+--bg-tertiary: #E6F6F4;
+
+
+
+/* Text */
+
+--text-primary: #12221F;
+
+--text-secondary: #003B33;
+
+--text-muted: #006557;
+
+
+
+/* Brand */
+
+--green: #00A991;
+
+--green-dark: #003B33;
+
+
+--gold: #D49224;
+
+--gold-light: #DDA850;
+
+
+
+/* Cards */
+
+--card-bg: #FFFFFF;
+
+--card-hover: #FBF4E9;
+
+
+
+/* Border */
+
+--border:
+
+rgba(0,59,51,.15);
+
+
+
+
+
+/* Shadow */
+
+--shadow:
+
+0 20px 50px rgba(0,59,51,.12);
+
+
+
+
+
+/* Gradients */
+
+--gradient-primary:
+
+linear-gradient(
+135deg,
+#00A991,
+#DDA850
+);
+
+
+
+--gradient-card:
+
+linear-gradient(
+145deg,
+#FFFFFF,
+#FBF4E9
+);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+
+@media(prefers-color-scheme:dark){
+
+
+:root {
+
+
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+
+--bg-primary:
+
+#00211C;
+
+
+
+--bg-secondary:
+
+#003B33;
+
+
+
+--bg-tertiary:
+
+#006557;
+
+
+
+
+
+
+
+/* ===========================
+   TEXT
+=========================== */
+
+
+--text-primary:
+
+#FFFFFF;
+
+
+
+--text-secondary:
+
+#FBF4E9;
+
+
+
+--text-muted:
+
+#9FD8D0;
+
+
+
+
+
+
+
+/* ===========================
+   BRAND
+=========================== */
+
+
+--green:
+
+#00A991;
+
+
+
+--green-dark:
+
+#001915;
+
+
+
+--gold:
+
+#D49224;
+
+
+
+--gold-light:
+
+#E8B65A;
+
+
+
+
+
+
+
+/* ===========================
+   CARDS
+=========================== */
+
+
+--card-bg:
+
+
+linear-gradient(
+
+145deg,
+
+rgba(0,169,145,.18),
+
+rgba(0,33,28,.96)
+
+);
+
+
+
+
+
+--card-hover:
+
+
+linear-gradient(
+
+145deg,
+
+rgba(0,169,145,.28),
+
+rgba(0,59,51,.95)
+
+);
+
+
+
+
+
+
+
+/* ===========================
+   BORDER
+=========================== */
+
+
+--border:
+
+
+rgba(221,168,80,.22);
+
+
+
+
+
+
+
+/* ===========================
+   SHADOW
+=========================== */
+
+
+--shadow:
+
+
+0 25px 60px rgba(0,0,0,.55);
+
+
+
+
+
+
+
+/* ===========================
+   GRADIENTS
+=========================== */
+
+
+--gradient-primary:
+
+
+linear-gradient(
+
+135deg,
+
+#00A991,
+
+#E8B65A
+
+);
+
+
+
+
+
+--gradient-card:
+
+
+linear-gradient(
+
+145deg,
+
+rgba(0,169,145,.22),
+
+rgba(0,33,28,.95)
+
+);
+
+
+
+}
+
+
+}
