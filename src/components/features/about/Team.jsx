@@ -2,68 +2,29 @@ import "./Team.css";
 
 import TeamCard from "../../common/cards/TeamCard/TeamCard";
 
-import buildersImage from "../../../assets/images/builders_oasis.png";
+import SectionTitle from "../../common/ui/SectionTitle/SectionTitle";
 
-
-const teamMembers = [
-
-{
-image: buildersImage,
-name: "Alex Morgan",
-role: "Blockchain Engineer",
-twitter: "https://x.com/alexmorgan"
-},
-
-
-{
-image: buildersImage,
-name: "Chris Williams",
-role: "Product Designer",
-twitter: "https://x.com/chriswilliams"
-},
-
-
-{
-image: buildersImage,
-name: "Emma Davis",
-role: "Frontend Developer",
-twitter: "https://x.com/emmadavis"
-},
-
-
-{
-image: buildersImage,
-name: "Michael Adams",
-role: "Protocol Researcher",
-twitter: "https://x.com/michaeladams"
-}
-
-];
+import { teamMembers } from "../../../data/teamData";
 
 
 
 function Team(){
 
+
 return(
 
-<section className="team-page">
+<section className="team-section">
 
 
-<section className="team-header">
+<SectionTitle
 
+title="Meet The Team"
 
-<h2>
-Meet The Team
-</h2>
+description="
+Engineers, designers and contributors helping build the Cowrie ecosystem.
+"
 
-
-<p>
-Engineers, designers and contributors helping build
-the Cowrie ecosystem.
-</p>
-
-
-</section>
+/>
 
 
 
@@ -71,15 +32,17 @@ the Cowrie ecosystem.
 
 
 {
-teamMembers.map((member,index)=>(
+teamMembers.map((member)=>(
+
 
 <TeamCard
 
-key={index}
+key={member.name}
 
 {...member}
 
 />
+
 
 ))
 
@@ -89,9 +52,12 @@ key={index}
 </div>
 
 
+
 </section>
 
+
 );
+
 
 }
 

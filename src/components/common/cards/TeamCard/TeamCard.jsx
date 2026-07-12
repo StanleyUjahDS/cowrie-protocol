@@ -4,13 +4,31 @@ import { motion } from "framer-motion";
 
 import { SiX } from "react-icons/si";
 
-import { cardItem } from "../../../../animations/variants";
+import {
+cardItem
+} from "../../../../animations/variants";
 
 
-function TeamCard({ image, name, role, twitter }) {
+
+function TeamCard({
+
+image,
+
+name,
+
+role,
+
+expertise,
+
+bio,
+
+twitter
+
+}){
 
 
-return (
+return(
+
 
 <motion.article
 
@@ -23,52 +41,33 @@ initial="hidden"
 whileInView="visible"
 
 viewport={{
-    once:true,
-    amount:.2
+once:true,
+amount:.2
 }}
 
 >
 
 
-<motion.div
 
-className="team-avatar-wrapper"
-
-initial={{
-    scale:0,
-    opacity:0
-}}
-
-whileInView={{
-    scale:1,
-    opacity:1
-}}
-
-transition={{
-    duration:.5,
-    delay:.2
-}}
-
-viewport={{
-    once:true
-}}
-
->
+<div className="team-avatar-wrapper">
 
 
 <div className="team-avatar">
 
 
 <img
+
 src={image}
+
 alt={name}
+
 />
 
 
 </div>
 
 
-</motion.div>
+</div>
 
 
 
@@ -82,14 +81,46 @@ alt={name}
 </h3>
 
 
+
 <p className="team-role">
+
 {role}
+
 </p>
 
 
 
+
 {
-twitter && (
+expertise &&
+
+<p className="team-expertise">
+
+{expertise}
+
+</p>
+
+}
+
+
+
+
+{
+bio &&
+
+<p className="team-bio">
+
+{bio}
+
+</p>
+
+}
+
+
+
+
+{
+twitter &&
 
 <a
 
@@ -103,14 +134,11 @@ className="team-x-link"
 
 >
 
-<SiX />
+<SiX/>
 
 </a>
 
-)
-
 }
-
 
 
 </div>
@@ -119,7 +147,9 @@ className="team-x-link"
 
 </motion.article>
 
+
 );
+
 
 }
 

@@ -1,0 +1,382 @@
+/* ===========================
+   TIMELINE
+=========================== */
+
+
+.timeline {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+
+.timeline-container {
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+    padding:2rem 0;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CENTER LINE
+=========================== */
+
+
+.timeline-line {
+
+
+    position:absolute;
+
+
+    left:50%;
+
+
+    top:0;
+
+
+    bottom:0;
+
+
+    width:2px;
+
+
+    background:var(--border);
+
+
+    transform:translateX(-50%);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   ITEMS
+=========================== */
+
+
+.timeline-item {
+
+
+    width:50%;
+
+
+    position:relative;
+
+
+    padding:1.5rem 3rem;
+
+
+}
+
+
+
+.timeline-item.left {
+
+
+    left:0;
+
+
+    text-align:right;
+
+
+}
+
+
+
+.timeline-item.right {
+
+
+    left:50%;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   DOT
+=========================== */
+
+
+.timeline-dot {
+
+
+    position:absolute;
+
+
+    top:35px;
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--gold);
+
+
+    color:var(--gold);
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+.timeline-dot svg {
+
+
+    width:24px;
+
+
+    height:24px;
+
+
+}
+
+
+
+
+
+.timeline-item.left .timeline-dot {
+
+
+    right:-27px;
+
+
+}
+
+
+
+.timeline-item.right .timeline-dot {
+
+
+    left:-27px;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARD
+=========================== */
+
+
+.timeline-card {
+
+
+    padding:2rem;
+
+
+    border-radius:30px;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--border);
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+
+
+.timeline-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+.timeline-card span {
+
+
+    display:inline-block;
+
+
+    margin-bottom:1rem;
+
+
+    font-weight:800;
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+.timeline-card h3 {
+
+
+    margin:0 0 .8rem;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+.timeline-card p {
+
+
+    margin:0;
+
+
+    line-height:1.7;
+
+
+    color:var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+.timeline-line {
+
+
+    left:25px;
+
+
+}
+
+
+
+.timeline-item,
+.timeline-item.left,
+.timeline-item.right {
+
+
+    width:100%;
+
+
+    left:0;
+
+
+    padding-left:5rem;
+
+
+    padding-right:0;
+
+
+    text-align:left;
+
+
+}
+
+
+
+.timeline-dot,
+.timeline-item.left .timeline-dot,
+.timeline-item.right .timeline-dot {
+
+
+    left:0;
+
+
+    right:auto;
+
+
+}
+
+
+}

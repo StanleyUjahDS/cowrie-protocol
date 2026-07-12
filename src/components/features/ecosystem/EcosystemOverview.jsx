@@ -16,57 +16,61 @@ import "./EcosystemOverview.css";
 
 
 
-import infrastructureImage from "../../../assets/images/dashboard.png";
-import dappImage from "../../../assets/images/dapp-image.png";
-import buildersImage from "../../../assets/images/builders_oasis.png";
-import globeImage from "../../../assets/images/cowrie-globe.png";
-
-
-
-
+import rwaImage from "../../../assets/images/rwa-image.png";
+import revenueImage from "../../../assets/images/share-image.png";
+import yieldImage from "../../../assets/images/yield-image.png";
+import web3Image from "../../../assets/images/hbadgerLogo.png";
 
 const slides = [
 
     {
-        title:"Open Ecosystem",
+        label: "Real World Assets",
+
+        title: "RWA Tokenization",
 
         description:
-        "A modular ecosystem designed for developers, institutions and communities.",
+        "Bridging traditional assets with blockchain technology by creating transparent, accessible and efficient digital ownership opportunities.",
 
-        image:globeImage
+        image: rwaImage
 
     },
 
 
     {
-        title:"Composable Infrastructure",
+        label: "Community Economy",
+
+        title: "Revenue Sharing",
 
         description:
-        "Build applications on top of interoperable blockchain infrastructure.",
+        "More than ownership. Participate in the value you help create through a community-driven ecosystem designed to reward contribution and participation.",
 
-        image:infrastructureImage
+        image: revenueImage
 
     },
 
 
     {
-        title:"Global Access",
+        label: "DeFi Growth",
+
+        title: "Yield Farming",
 
         description:
-        "Connecting users worldwide through decentralized technologies.",
+        "Your idle capital becomes active growth, generating sustainable rewards through decentralized finance opportunities within the Cowrie ecosystem.",
 
-        image:dappImage
+        image: yieldImage
 
     },
 
 
     {
-        title:"Developer First",
+        label: "Education & Adoption",
+
+        title: "Web3 Sensitization",
 
         description:
-        "Powerful SDKs, APIs and documentation for rapid development.",
+        "Turning curiosity into competence, one resilient badger at a time by educating communities and empowering users to confidently participate in the decentralized future.",
 
-        image:buildersImage
+        image: web3Image
 
     }
 
@@ -76,170 +80,210 @@ const slides = [
 
 
 
+
 function EcosystemOverview(){
 
 
-return (
+    return (
 
-<section className="ecosystem-overview">
+        <section className="ecosystem-overview">
 
 
-<Swiper
+            <Swiper
 
 
-modules={[
+                modules={[
 
-Navigation,
+                    Navigation,
 
-Pagination,
+                    Pagination,
 
-Autoplay
+                    Autoplay
 
-]}
+                ]}
 
 
 
-spaceBetween={30}
+                spaceBetween={30}
 
 
-slidesPerView={1.15}
+                slidesPerView={1.15}
 
 
-centeredSlides={true}
+                centeredSlides={true}
 
 
 
-navigation={true}
+                navigation={true}
 
 
 
-pagination={{
+                pagination={{
 
-clickable:true
+                    clickable:true
 
-}}
+                }}
 
 
 
-autoplay={{
+                autoplay={{
 
-delay:3500,
 
-disableOnInteraction:false
+                    delay:3500,
 
-}}
 
+                    disableOnInteraction:false
 
 
-speed={800}
+                }}
 
 
 
-loop={true}
+                speed={800}
 
 
 
-breakpoints={{
+                loop={true}
 
 
-640:{
 
-slidesPerView:2
+                breakpoints={{
 
-},
 
 
+                    640:{
 
-1024:{
 
-slidesPerView:3
+                        slidesPerView:1.5
 
-}
 
+                    },
 
 
-}}
 
+                    1024:{
 
 
->
+                        slidesPerView:3
 
 
+                    }
 
-{
 
+                }}
 
-slides.map((slide,index)=>(
 
+            >
 
 
-<SwiperSlide key={index}>
 
 
-<div className="ecosystem-overview-card">
 
+                {
 
+                    slides.map((slide,index)=>(
 
-<div className="ecosystem-overview-content">
 
 
-<h2>
+                        <SwiperSlide key={index}>
 
-{slide.title}
 
-</h2>
+                            <article className="ecosystem-overview-card">
 
 
 
-<p>
 
-{slide.description}
 
-</p>
+                                <div className="ecosystem-overview-content">
 
 
 
-</div>
+                                    <span className="overview-label">
 
 
+                                        {slide.label}
 
 
+                                    </span>
 
-<div className="ecosystem-overview-image">
 
 
-<img
 
-src={slide.image}
 
-alt={slide.title}
+                                    <h2>
 
-/>
 
+                                        {slide.title}
 
-</div>
 
+                                    </h2>
 
 
-</div>
 
 
-</SwiperSlide>
 
+                                    <p>
 
-))
 
+                                        {slide.description}
 
-}
 
+                                    </p>
 
 
-</Swiper>
 
 
-</section>
+                                </div>
 
-);
+
+
+
+
+
+
+                                <div className="ecosystem-overview-image">
+
+
+
+                                    <img
+
+                                        src={slide.image}
+
+                                        alt={slide.title}
+
+                                        loading="lazy"
+
+                                    />
+
+
+
+                                </div>
+
+
+
+
+
+                            </article>
+
+
+                        </SwiperSlide>
+
+
+                    ))
+
+                }
+
+
+
+
+
+            </Swiper>
+
+
+
+        </section>
+
+    );
 
 
 }

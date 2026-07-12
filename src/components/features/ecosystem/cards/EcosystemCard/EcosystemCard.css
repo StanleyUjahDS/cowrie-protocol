@@ -2,16 +2,19 @@
    ECOSYSTEM CARD
 =========================== */
 
-
 .ecosystem-card {
 
     width:100%;
 
     max-width:1200px;
 
+    margin:0 auto;
+
     display:flex;
 
     justify-content:center;
+
+    align-items:center;
 
     background:transparent;
 
@@ -20,10 +23,6 @@
     overflow:hidden;
 
 }
-
-
-
-
 
 
 
@@ -42,13 +41,13 @@
 
     align-items:center;
 
+    justify-content:center;
+
     text-align:center;
 
     gap:1.5rem;
 
 }
-
-
 
 
 
@@ -61,11 +60,17 @@
 
 .ecosystem-content h2 {
 
-    margin:0;
+    width:100%;
 
     max-width:900px;
 
-    font-size:clamp(2.25rem,5vw,4rem);
+    margin:0 auto;
+
+    font-size:clamp(
+        2.25rem,
+        5vw,
+        4rem
+    );
 
     line-height:1.08;
 
@@ -81,8 +86,6 @@
 
 
 
-
-
 /* ===========================
    DESCRIPTION
 =========================== */
@@ -90,9 +93,12 @@
 
 .ecosystem-content p {
 
+
+    width:100%;
+
     max-width:700px;
 
-    margin:0;
+    margin:0 auto;
 
     font-size:1.1rem;
 
@@ -132,11 +138,16 @@
 
 .ecosystem-image {
 
+
     width:100%;
 
     max-width:900px;
 
-    margin-top:1.5rem;
+    margin:1.5rem auto 0;
+
+    display:flex;
+
+    justify-content:center;
 
 }
 
@@ -144,11 +155,12 @@
 
 
 
-
-
 .ecosystem-image img {
 
+
     width:100%;
+
+    max-width:900px;
 
     height:auto;
 
@@ -166,6 +178,7 @@
 
 
 
+
 /* ===========================
    TABLET
 =========================== */
@@ -174,26 +187,35 @@
 @media(max-width:900px){
 
 
-    .ecosystem-content h2 {
+.ecosystem-card {
 
+    width:100%;
 
-        font-size:clamp(2rem,6vw,3.5rem);
-
-
-    }
+}
 
 
 
-    .ecosystem-image img {
+.ecosystem-content h2 {
+
+    font-size:clamp(
+        2rem,
+        6vw,
+        3.5rem
+    );
+
+}
 
 
-        max-height:360px;
 
+.ecosystem-image img {
 
-    }
+    max-height:360px;
+
+}
 
 
 }
+
 
 
 
@@ -209,53 +231,43 @@
 @media(max-width:600px){
 
 
-    .ecosystem-card {
+.ecosystem-card {
 
+    border-radius:30px;
 
-        border-radius:30px;
-
-
-    }
-
-
-
-    .ecosystem-content {
-
-
-        gap:1.25rem;
-
-
-    }
+}
 
 
 
-    .ecosystem-content p {
+.ecosystem-content {
 
+    gap:1.25rem;
 
-        font-size:.95rem;
-
-
-    }
-
-
-
-    .ecosystem-image {
-
-
-        margin-top:1rem;
-
-
-    }
+}
 
 
 
-    .ecosystem-image img {
+.ecosystem-content p {
+
+    font-size:.95rem;
+
+}
 
 
-        max-height:280px;
+
+.ecosystem-image {
+
+    margin-top:1rem;
+
+}
 
 
-    }
+
+.ecosystem-image img {
+
+    max-height:280px;
+
+}
 
 
 }

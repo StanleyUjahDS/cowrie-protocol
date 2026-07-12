@@ -16,59 +16,46 @@ import LatestUpdates from "../components/features/ecosystem/LatestUpdates/Latest
 
 import FAQ from "../components/features/home/Faq";
 
-
 function Ecosystem(){
-
 
 return (
 
 <Layout>
 
-
 <main className="ecosystem-page">
-
 
 <Container>
 
+<div className="ecosystem-sections">
 
 <EcosystemHero />
 
-
 <NotABank />
-
 
 <Infrastructure />
 
-
 <EcosystemFlow />
-
 
 <EcosystemComponents />
 
-
 <EcosystemBenefits />
-
 
 <EcosystemAudience />
 
-
 <LatestUpdates />
-
 
 <FAQ />
 
+</div>
 
 </Container>
 
-
 </main>
-
 
 </Layout>
 
 );
 
 }
-
 
 export default Ecosystem;

@@ -1,107 +1,94 @@
 import "./CoreTeam.css";
 
+
 import CoreTeamCard from "../../common/cards/CoreTeamCard/CoreTeamCard";
 
-import buildersImage from "../../../assets/images/builders_oasis.png";
+
+import SectionTitle from "../../common/ui/SectionTitle/SectionTitle";
 
 
-const coreMembers = [
+import {
+    coreTeam
+} from "../../../data/teamData";
 
-{
-    image: buildersImage,
-    name:"Stanley Ujah",
-    role:"Founder & Protocol Lead",
-    expertise:"Blockchain • Data Science • Web3 Infrastructure",
-    bio:
-    "Leading the development of Cowrie Protocol with a focus on decentralized finance, blockchain infrastructure and real-world asset innovation.",
-    twitter:"#"
-},
-
-
-{
-    image: buildersImage,
-    name:"James Carter",
-    role:"Co-Founder & CTO",
-    expertise:"Smart Contracts • Security • Distributed Systems",
-    bio:
-    "Building secure and scalable blockchain systems powering the Cowrie ecosystem.",
-    twitter:"#"
-},
-
-{
-    image: buildersImage,
-    name:"Stanley Ujah",
-    role:"Founder & Protocol Lead",
-    expertise:"Blockchain • Data Science • Web3 Infrastructure",
-    bio:
-    "Leading the development of Cowrie Protocol with a focus on decentralized finance, blockchain infrastructure and real-world asset innovation.",
-    twitter:"#"
-},
-
-
-{
-    image: buildersImage,
-    name:"James Carter",
-    role:"Co-Founder & CTO",
-    expertise:"Smart Contracts • Security • Distributed Systems",
-    bio:
-    "Building secure and scalable blockchain systems powering the Cowrie ecosystem.",
-    twitter:"#"
-}
-
-];
 
 
 
 function CoreTeam(){
 
+
 return(
+
 
 <section className="core-team-section">
 
 
-<div className="core-team-header">
-
-<h2>
-Core Team
-</h2>
 
 
-<p>
-The leadership team driving the vision,
-technology and growth of Cowrie Protocol.
-</p>
+
+<SectionTitle
 
 
-</div>
+title="Core Team"
+
+
+description="
+The builders and innovators driving the vision, technology and growth of Cowrie Protocol.
+"
+
+
+/>
+
+
+
+
+
 
 
 
 <div className="core-team-grid">
 
+
+
 {
-coreMembers.map((member,index)=>(
+
+coreTeam.map((member)=>(
+
 
 <CoreTeamCard
 
-key={index}
+
+key={member.name}
+
 
 {...member}
 
+
 />
+
 
 ))
 
+
 }
+
+
 
 </div>
 
 
+
+
+
+
 </section>
+
 
 );
 
+
 }
+
 
 
 export default CoreTeam;

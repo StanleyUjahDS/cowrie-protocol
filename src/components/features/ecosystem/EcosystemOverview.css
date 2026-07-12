@@ -44,6 +44,8 @@
 
     justify-content:center;
 
+    align-items:stretch;
+
 
     opacity:.45;
 
@@ -55,6 +57,7 @@
 
 
 }
+
 
 
 
@@ -75,30 +78,23 @@
 
 
 
-
-
 /* ===========================
    CARD
 =========================== */
 
-
 .ecosystem-overview-card {
-
 
     width:100%;
 
-
     min-height:480px;
 
-
-    padding:2.5rem;
+    padding:2.5rem 2.5rem 0;
 
 
     border-radius:35px;
 
 
     background:
-
 
     linear-gradient(
 
@@ -116,14 +112,7 @@
 
     display:flex;
 
-
     flex-direction:column;
-
-
-    justify-content:space-between;
-
-
-    gap:2rem;
 
 
     overflow:hidden;
@@ -131,34 +120,7 @@
 
     transition:.35s ease;
 
-
 }
-
-
-
-
-
-.ecosystem-overview-card:hover {
-
-
-    transform:translateY(-10px);
-
-
-    border-color:var(--gold);
-
-
-    box-shadow:
-
-    0 25px 60px rgba(0,0,0,.15);
-
-
-}
-
-
-
-
-
-
 
 /* ===========================
    CONTENT
@@ -174,12 +136,26 @@
     flex-direction:column;
 
 
-    gap:1rem;
+    align-items:center;
+
+
+    text-align:center;
+
+
+    gap:1.2rem;
 
 
 }
 
 
+
+
+
+
+
+/* ===========================
+   TITLE
+=========================== */
 
 
 .ecosystem-overview-content h2 {
@@ -188,15 +164,30 @@
     margin:0;
 
 
+    max-width:12ch;
+
+
     font-size:
 
-    clamp(1.6rem,3vw,2.4rem);
+
+    clamp(1.8rem,3vw,2.5rem);
+
 
 
     font-weight:800;
 
 
+
+    line-height:1.15;
+
+
+
+    letter-spacing:-.03em;
+
+
+
     color:var(--text-primary);
+
 
 
 }
@@ -204,10 +195,54 @@
 
 
 
+
+
+
+.ecosystem-overview-content h2::after {
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:70px;
+
+
+    height:3px;
+
+
+    margin:1rem auto 0;
+
+
+    border-radius:50px;
+
+
+    background:var(--gold);
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+
 .ecosystem-overview-content p {
 
 
     margin:0;
+
+
+    max-width:35ch;
 
 
     line-height:1.8;
@@ -241,7 +276,10 @@
     justify-content:center;
 
 
-    align-items:center;
+    align-items:flex-end;
+
+
+    margin-top:auto;
 
 
 }
@@ -256,13 +294,19 @@
     width:100%;
 
 
-    max-width:320px;
+    max-width:330px;
 
 
-    height:200px;
+    height:auto;
+
+
+    display:block;
 
 
     object-fit:contain;
+
+
+    object-position:center bottom;
 
 
     transition:.45s ease;
@@ -274,11 +318,13 @@
 
 
 
+
+
 .ecosystem-overview-card:hover 
 .ecosystem-overview-image img {
 
 
-    transform:scale(1.08);
+    transform:translateY(-8px);
 
 
 }
@@ -303,6 +349,9 @@
     color:var(--gold);
 
 
+    transition:.3s ease;
+
+
 }
 
 
@@ -316,6 +365,9 @@
 
 
     transform:scale(1.15);
+
+
+    color:var(--gold-light);
 
 
 }
@@ -337,11 +389,17 @@
 
     width:10px;
 
+
     height:10px;
+
 
     background:var(--text-muted);
 
+
     opacity:.4;
+
+
+    transition:.3s ease;
 
 
 }
@@ -356,9 +414,12 @@
 
     width:28px;
 
+
     border-radius:20px;
 
+
     background:var(--gold);
+
 
     opacity:1;
 
@@ -384,7 +445,18 @@
 
         min-height:430px;
 
-        padding:2rem;
+
+        padding:2rem 2rem 0;
+
+
+    }
+
+
+
+    .ecosystem-overview-image img {
+
+
+        max-width:280px;
 
 
     }
@@ -409,7 +481,7 @@
     .ecosystem-overview .swiper {
 
 
-        padding-bottom:4rem;
+        padding:2rem 0 4rem;
 
 
     }
@@ -432,7 +504,20 @@
     .ecosystem-overview-image img {
 
 
-        height:160px;
+        max-width:240px;
+
+
+    }
+
+
+
+    .ecosystem-overview 
+    .swiper-button-next,
+    .ecosystem-overview 
+    .swiper-button-prev {
+
+
+        display:none;
 
 
     }
@@ -442,13 +527,22 @@
 
 
 
+
+
+
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+
 @media(max-width:480px){
 
 
     .ecosystem-overview-content h2 {
 
 
-        font-size:1.5rem;
+        font-size:1.55rem;
 
 
     }
@@ -459,6 +553,16 @@
 
 
         font-size:.95rem;
+
+
+    }
+
+
+
+    .ecosystem-overview-image img {
+
+
+        max-width:210px;
 
 
     }

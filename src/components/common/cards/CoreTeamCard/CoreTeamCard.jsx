@@ -1,10 +1,23 @@
 import "./CoreTeamCard.css";
 
+
 import { motion } from "framer-motion";
 
-import { SiX } from "react-icons/si";
 
-import { cardItem } from "../../../../animations/variants";
+import {
+    SiX,
+    SiGithub
+} from "react-icons/si";
+
+
+import {
+    FaLinkedin
+} from "react-icons/fa";
+
+
+import {
+    cardItem
+} from "../../../../animations/variants";
 
 
 
@@ -20,22 +33,32 @@ function CoreTeamCard({
 
     bio,
 
-    twitter
+    twitter,
+
+    linkedin,
+
+    github
 
 }) {
 
 
 return (
 
-<motion.div
+
+<motion.article
+
 
 className="core-team-card"
 
+
 variants={cardItem}
+
 
 initial="hidden"
 
+
 whileInView="visible"
+
 
 viewport={{
 
@@ -45,20 +68,25 @@ viewport={{
 
 }}
 
+
+
 >
 
 
 <div className="core-team-image">
 
+
 <img
 
 src={image}
 
-alt={name}
+alt={`${name} profile`}
 
 />
 
+
 </div>
+
 
 
 
@@ -67,11 +95,13 @@ alt={name}
 <div className="core-team-content">
 
 
+
 <h3>
 
 {name}
 
 </h3>
+
 
 
 
@@ -88,21 +118,20 @@ alt={name}
 
 
 
+
+{
+expertise && (
+
 <p className="core-team-expertise">
 
 {expertise}
 
 </p>
 
+)
 
+}
 
-
-
-<p className="core-team-bio">
-
-{bio}
-
-</p>
 
 
 
@@ -110,10 +139,30 @@ alt={name}
 
 
 {
-twitter && (
+bio && (
+
+<p className="core-team-bio">
+
+{bio}
+
+</p>
+
+)
+
+}
+
+
+
+
+
+
 
 <div className="core-team-socials">
 
+
+
+{
+twitter && (
 
 <a
 
@@ -127,21 +176,66 @@ className="core-team-social"
 
 >
 
-
 <SiX />
-
-
-<span>
-
-X
-
-</span>
-
 
 </a>
 
+)
 
-</div>
+}
+
+
+
+
+
+
+{
+linkedin && (
+
+<a
+
+href={linkedin}
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+className="core-team-social"
+
+>
+
+<FaLinkedin />
+
+</a>
+
+)
+
+}
+
+
+
+
+
+
+
+{
+github && (
+
+<a
+
+href={github}
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+className="core-team-social"
+
+>
+
+<SiGithub />
+
+</a>
 
 )
 
@@ -154,9 +248,21 @@ X
 
 
 
-</motion.div>
+
+
+
+
+</div>
+
+
+
+
+
+</motion.article>
+
 
 );
+
 
 }
 

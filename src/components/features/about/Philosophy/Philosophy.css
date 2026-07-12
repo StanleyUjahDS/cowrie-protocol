@@ -1,0 +1,248 @@
+/* ===========================
+   PHILOSOPHY
+=========================== */
+
+
+.philosophy {
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3rem;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GRID
+=========================== */
+
+
+.philosophy-grid {
+
+
+    width:100%;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:1.8rem;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARD
+=========================== */
+
+
+.philosophy-card {
+
+
+    padding:2rem;
+
+
+    border-radius:30px;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--border);
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+.philosophy-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   ICON
+=========================== */
+
+
+.philosophy-icon {
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:20px;
+
+
+    background:rgba(126,221,208,.15);
+
+
+    color:var(--gold);
+
+
+    margin-bottom:1.5rem;
+
+
+}
+
+
+
+.philosophy-icon svg {
+
+
+    width:30px;
+
+
+    height:30px;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TEXT
+=========================== */
+
+
+.philosophy-card h3 {
+
+
+    margin:0 0 1rem;
+
+
+    color:var(--text-primary);
+
+
+    font-size:1.25rem;
+
+
+}
+
+
+
+.philosophy-card p {
+
+
+    margin:0;
+
+
+    color:var(--text-secondary);
+
+
+    line-height:1.75;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:1100px){
+
+
+.philosophy-grid {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:600px){
+
+
+.philosophy-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.philosophy-card {
+
+
+    padding:1.5rem;
+
+
+}
+
+
+}

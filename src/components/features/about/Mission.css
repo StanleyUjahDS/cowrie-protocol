@@ -1,19 +1,331 @@
+/* ===========================
+   MISSION
+=========================== */
+
+
 .mission {
 
 
-width:100%;
+    width:100%;
 
 
-padding:6rem 8%;
+    display:grid;
 
 
-box-sizing:border-box;
+    grid-template-columns:1fr 1fr;
 
 
-display:flex;
+    gap:4rem;
 
 
-justify-content:center;
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.mission-label {
+
+
+    display:inline-flex;
+
+
+    padding:.5rem 1.3rem;
+
+
+    border-radius:999px;
+
+
+    background:rgba(126,221,208,.12);
+
+
+    color:var(--gold);
+
+
+    font-weight:700;
+
+
+    margin-bottom:1.5rem;
+
+
+}
+
+
+
+
+
+.mission-content h2 {
+
+
+    margin:0 0 1.5rem;
+
+
+    font-size:clamp(2rem,4vw,3.2rem);
+
+
+    line-height:1.15;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+.mission-content p {
+
+
+    color:var(--text-secondary);
+
+
+    line-height:1.8;
+
+
+    margin-bottom:1rem;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARDS
+=========================== */
+
+
+.mission-grid {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:1.5rem;
+
+
+}
+
+
+
+
+
+
+.mission-card {
+
+
+    padding:1.8rem;
+
+
+    border-radius:28px;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--border);
+
+
+    display:flex;
+
+
+    gap:1.2rem;
+
+
+    align-items:flex-start;
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+
+
+.mission-card:hover {
+
+
+    transform:translateX(8px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   ICON
+=========================== */
+
+
+.mission-icon {
+
+
+    flex-shrink:0;
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    border-radius:18px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    background:rgba(126,221,208,.15);
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+.mission-icon svg {
+
+
+    width:26px;
+
+
+    height:26px;
+
+
+}
+
+
+
+
+
+.mission-card h3 {
+
+
+    margin:0 0 .5rem;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+.mission-card p {
+
+
+    margin:0;
+
+
+    line-height:1.7;
+
+
+    color:var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.mission {
+
+
+    grid-template-columns:1fr;
+
+
+    gap:3rem;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:600px){
+
+
+.mission-card {
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.mission-card:hover {
+
+
+    transform:translateY(-5px);
+
+
+}
+
 
 
 }

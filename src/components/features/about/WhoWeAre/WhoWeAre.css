@@ -1,0 +1,300 @@
+/* ===========================
+   WHO WE ARE
+=========================== */
+
+
+.who-we-are {
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+}
+
+
+
+
+
+
+/* ===========================
+   CONTENT
+=========================== */
+
+
+.who-label {
+
+
+    display:inline-flex;
+
+
+    padding:.5rem 1.2rem;
+
+
+    border-radius:999px;
+
+
+    background:rgba(126,221,208,.12);
+
+
+    color:var(--gold);
+
+
+    font-weight:700;
+
+
+    margin-bottom:1.5rem;
+
+
+}
+
+
+
+.who-we-are-content h2 {
+
+
+    margin:0 0 1.5rem;
+
+
+    font-size:clamp(2rem,4vw,3rem);
+
+
+    line-height:1.15;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+.who-we-are-content p {
+
+
+    color:var(--text-secondary);
+
+
+    line-height:1.8;
+
+
+    margin-bottom:1rem;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARDS
+=========================== */
+
+
+.who-we-are-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:1.5rem;
+
+
+}
+
+
+
+
+
+.who-card {
+
+
+    padding:2rem;
+
+
+    border-radius:28px;
+
+
+    background:var(--card-bg);
+
+
+    border:1px solid var(--border);
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+
+
+.who-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+/* ICON */
+
+
+.who-icon {
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:18px;
+
+
+    background:rgba(126,221,208,.15);
+
+
+    color:var(--gold);
+
+
+    margin-bottom:1.2rem;
+
+
+}
+
+
+
+.who-icon svg {
+
+
+    width:28px;
+
+
+    height:28px;
+
+
+}
+
+
+
+
+.who-card h3 {
+
+
+    margin:0 0 .8rem;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+.who-card p {
+
+
+    margin:0;
+
+
+    line-height:1.7;
+
+
+    color:var(--text-secondary);
+
+
+}
+
+
+
+
+
+
+
+/* TABLET */
+
+
+@media(max-width:900px){
+
+
+.who-we-are {
+
+
+    grid-template-columns:1fr;
+
+
+    gap:3rem;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+
+.who-we-are-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.who-card {
+
+
+    padding:1.5rem;
+
+
+}
+
+
+}

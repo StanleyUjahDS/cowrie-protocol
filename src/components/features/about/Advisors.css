@@ -1,67 +1,49 @@
 .advisors-section{
 
-padding:80px 8%;
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+gap:3rem;
 
 }
 
-
-.advisors-section h2{
-
-text-align:center;
-font-size:2.5rem;
-margin-bottom:40px;
-
-}
 
 
 .advisor-grid{
 
+width:100%;
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:2rem;
 
 }
 
 
 
-.advisor-card{
+@media(max-width:1000px){
 
-padding:30px;
+.advisor-grid{
 
-border-radius:20px;
+grid-template-columns:repeat(2,1fr);
 
-background:var(--bg-secondary);
-
-border:1px solid var(--border-color);
-
-text-align:center;
-
-transition:.3s ease;
+}
 
 }
 
 
 
-.advisor-card:hover{
+@media(max-width:650px){
 
-transform:translateY(-8px);
+.advisor-grid{
 
-}
-
-
-
-.advisor-card h3{
-
-margin-bottom:10px;
-
-color:var(--text-primary);
+grid-template-columns:1fr;
 
 }
-
-
-
-.advisor-card p{
-
-color:var(--text-secondary);
 
 }

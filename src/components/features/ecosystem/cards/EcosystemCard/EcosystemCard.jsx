@@ -5,6 +5,105 @@ import { motion } from "framer-motion";
 import Button from "../../../../common/ui/Button/Button";
 
 
+
+const containerVariants = {
+
+    hidden:{
+        opacity:0
+    },
+
+    visible:{
+        opacity:1,
+
+        transition:{
+            staggerChildren:.15,
+            delayChildren:.1
+        }
+    }
+
+};
+
+
+
+const itemVariants = {
+
+    hidden:{
+
+        opacity:0,
+
+        y:40,
+
+        filter:"blur(8px)"
+
+    },
+
+
+    visible:{
+
+        opacity:1,
+
+        y:0,
+
+        filter:"blur(0px)",
+
+        transition:{
+            duration:.7,
+            ease:[0.22,1,0.36,1]
+        }
+
+    }
+
+};
+
+
+
+
+
+const imageVariants = {
+
+
+hidden:{
+
+    opacity:0,
+
+    scale:.9,
+
+    y:50,
+
+    rotateX:10
+
+},
+
+
+visible:{
+
+
+    opacity:1,
+
+    scale:1,
+
+    y:0,
+
+    rotateX:0,
+
+
+    transition:{
+
+        duration:1,
+
+        ease:[0.16,1,0.3,1]
+
+    }
+
+}
+
+
+};
+
+
+
+
+
 function EcosystemCard({
 
     title,
@@ -20,68 +119,68 @@ function EcosystemCard({
 
 return (
 
+
 <motion.div
+
 
 className="ecosystem-card"
 
 
-initial={{
-
-    opacity:0,
-
-    y:40
-
-}}
+variants={containerVariants}
 
 
-whileInView={{
+initial="hidden"
 
-    opacity:1,
 
-    y:0
-
-}}
+whileInView="visible"
 
 
 viewport={{
 
-    once:false,
+    once:true,
 
     amount:.25
 
 }}
 
 
-transition={{
 
-    duration:.6,
+>
 
-    ease:"easeOut"
 
-}}
+<motion.div
+
+
+className="ecosystem-content"
 
 
 >
 
 
-<div className="ecosystem-content">
+<motion.h2
 
+variants={itemVariants}
 
-<h2>
+>
 
 {title}
 
-</h2>
+</motion.h2>
 
 
 
 
 
-<p>
+
+<motion.p
+
+variants={itemVariants}
+
+>
 
 {description}
 
-</p>
+</motion.p>
 
 
 
@@ -89,9 +188,18 @@ transition={{
 
 
 
-{button && (
 
-<div className="ecosystem-button">
+{
+button && (
+
+
+<motion.div
+
+className="ecosystem-button"
+
+variants={itemVariants}
+
+>
 
 
 <Button variant="mid-green">
@@ -101,58 +209,42 @@ transition={{
 </Button>
 
 
-</div>
-
-)}
+</motion.div>
 
 
+)
 
-
-
+}
 
 
 
-{image && (
+
+
+
+
+
+
+{
+image && (
+
 
 <motion.div
+
 
 className="ecosystem-image"
 
 
-initial={{
-
-    opacity:0,
-
-    scale:.95
-
-}}
+variants={imageVariants}
 
 
-whileInView={{
+whileHover={{
 
-    opacity:1,
+    y:-10,
 
-    scale:1
+    scale:1.03
 
 }}
 
-
-viewport={{
-
-    once:false,
-
-    amount:.25
-
-}}
-
-
-transition={{
-
-    duration:.5,
-
-    delay:.15
-
-}}
 
 
 >
@@ -169,17 +261,24 @@ alt={title || "Cowrie ecosystem"}
 
 </motion.div>
 
-)}
+
+)
+
+}
 
 
 
-</div>
+
+</motion.div>
+
+
 
 
 </motion.div>
 
 
 );
+
 
 }
 

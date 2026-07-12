@@ -1,7 +1,7 @@
 import "./Hero.css";
 
 import HeroCard from "../../../common/cards/HeroCard/HeroCard";
-import heroImage from "../../../../assets/images/hero_image.png";
+import heroImage from "../../../../assets/images/3.png";
 
 import { motion } from "framer-motion";
 
