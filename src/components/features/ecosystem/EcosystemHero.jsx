@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import EcosystemCard from "./cards/EcosystemCard/EcosystemCard";
 
-import ecosystemImage from "../../../assets/images/builders_oasis.png";
+import ecosystemImage from "../../../assets/images/ecosystem-image.png";
 
 import {
     fadeUp,
