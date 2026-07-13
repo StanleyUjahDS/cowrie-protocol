@@ -270,13 +270,9 @@ className="footer-logo"
 
 
 <img
-
-src="/cowrieLogo.png"
-
-alt="Cowrie Protocol Logo"
-
-className="footer-logo-image"
-
+  src={`${import.meta.env.BASE_URL}cowrieLogo.png`}
+  alt="Cowrie Protocol Logo"
+  className="logo-image"
 />
 
 

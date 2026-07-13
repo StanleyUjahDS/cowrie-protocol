@@ -83,7 +83,7 @@ const coreTeam = [
 {
     name:"Prince Land",
 
-    role:"Maarketing and Growth Lead",
+    role:"Marketing and Growth Lead",
 
     image:princeland,
 

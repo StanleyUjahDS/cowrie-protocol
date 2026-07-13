@@ -1,0 +1,231 @@
+/* ==========================
+   LAUNCH APP PAGE
+========================== */
+
+
+.launch-app-page {
+
+    min-height:80vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6rem 5%;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+.launch-app-page::before {
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    top:-150px;
+
+    right:-150px;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(212,175,55,.18),
+        transparent 70%
+    );
+
+    filter:blur(20px);
+
+}
+
+
+
+
+
+.launch-app-content {
+
+    max-width:800px;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.launch-badge {
+
+    display:inline-flex;
+
+    padding:.5rem 1.2rem;
+
+    border-radius:50px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    color:var(--gold);
+
+    background:
+
+    color-mix(
+        in srgb,
+        var(--gold) 12%,
+        transparent
+    );
+
+    border:1px solid var(--border);
+
+    margin-bottom:2rem;
+
+}
+
+
+
+
+
+.launch-app-content h1 {
+
+    font-size:
+
+    clamp(2.8rem,6vw,5rem);
+
+    line-height:1.1;
+
+    font-weight:900;
+
+    letter-spacing:-.04em;
+
+    color:var(--text-primary);
+
+}
+
+
+
+
+
+.launch-app-content h1 span {
+
+    display:block;
+
+    background:var(--gradient-primary);
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+
+
+
+
+.launch-app-content p {
+
+    max-width:650px;
+
+    margin:1.5rem auto 0;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    color:var(--text-secondary);
+
+}
+
+
+
+
+
+.launch-notify {
+
+    margin-top:2.5rem;
+
+    padding:1rem 2rem;
+
+    border-radius:16px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-weight:800;
+
+    font-size:1rem;
+
+    background:var(--accent-color);
+
+    color:white;
+
+    transition:.3s ease;
+
+}
+
+
+
+
+
+.launch-notify:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .launch-app-page {
+
+        padding:4rem 1.5rem;
+
+    }
+
+
+
+    .launch-app-content h1 {
+
+        font-size:2.5rem;
+
+    }
+
+
+
+    .launch-app-content p {
+
+        font-size:1rem;
+
+    }
+
+
+}

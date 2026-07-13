@@ -9,64 +9,58 @@ import Home from "../pages/Home";
 import Docs from "../pages/Docs";
 import About from "../pages/About";
 import Ecosystem from "../pages/Ecosystem";
+import LaunchApp from "../pages/LaunchApp";
 
 
 
-function Router(){
+function Router() {
 
 
-return(
+  return (
+
+    <BrowserRouter>
 
 
-<BrowserRouter>
+      <Routes>
 
 
-<Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
 
-<Route
-
-path="/"
-
-element={<Home/>}
-
-/>
+        <Route
+          path="/docs"
+          element={<Docs />}
+        />
 
 
-<Route
-
-path="/docs"
-
-element={<Docs/>}
-
-/>
+        <Route
+          path="/about"
+          element={<About />}
+        />
 
 
-<Route
-
-path="/about"
-
-element={<About/>}
-
-/>
+        <Route
+          path="/ecosystem"
+          element={<Ecosystem />}
+        />
 
 
-<Route
-
-path="/ecosystem"
-
-element={<Ecosystem/>}
-
-/>
+        <Route
+          path="/launch"
+          element={<LaunchApp />}
+        />
 
 
-</Routes>
+      </Routes>
 
 
-</BrowserRouter>
+    </BrowserRouter>
 
+  );
 
-)
 
 }
 

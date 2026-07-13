@@ -1,335 +1,362 @@
 import "./Navbar.css";
 
-import { NavLink, useLocation } from "react-router-dom";
+import {
+    NavLink,
+    useLocation,
+    useNavigate
+} from "react-router-dom";
+
 import { useState } from "react";
 
-import { Menu, X } from "lucide-react";
+import {
+    Menu,
+    X
+} from "lucide-react";
 
 import Dropdown from "../../ui/Dropdown/Dropdown";
 import Button from "../../ui/Button/Button";
 
 
+
 function Navbar() {
 
 
-const [open,setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
 
-const location = useLocation();
+    const location = useLocation();
 
 
+    const navigate = useNavigate();
 
-const closeMenu = ()=>{
 
-    setOpen(false);
 
-};
 
+    const closeMenu = () => {
 
+        setOpen(false);
 
+    };
 
 
-const productItems = [
 
-    {
-        label:"Cowrie Vault",
-        to:"/products/vault"
-    },
 
-    {
-        label:"RWA Bridge",
-        to:"/products/bridge"
-    },
 
-    {
-        label:"Staking",
-        to:"/products/staking"
-    }
+    const productItems = [
 
-];
+        {
+            label: "Cowrie Vault",
+            to: "/products/vault"
+        },
 
+        {
+            label: "RWA Bridge",
+            to: "/products/bridge"
+        },
 
+        {
+            label: "Staking",
+            to: "/products/staking"
+        }
 
+    ];
 
 
 
 
-const navbarTheme =
 
-location.pathname.includes("/about")
 
-?
 
-"about-active"
+    const navbarTheme =
 
+        location.pathname.includes("/about")
 
-:
+        ?
 
-location.pathname.includes("/ecosystem")
+        "about-active"
 
-?
 
-"ecosystem-active"
+        :
 
 
-:
+        location.pathname.includes("/ecosystem")
 
-location.pathname.includes("/docs")
+        ?
 
-?
+        "ecosystem-active"
 
-"docs-active"
 
+        :
 
-:
 
-"";
+        location.pathname.includes("/docs")
 
+        ?
 
+        "docs-active"
 
 
+        :
 
 
+        location.pathname.includes("/launch")
 
+        ?
 
-return (
+        "launch-active"
 
-<nav className={`navbar ${navbarTheme}`}>
 
+        :
 
+        "";
 
-<div className="navbar-container">
 
 
 
 
 
-<NavLink
 
-to="/"
 
-end
+    return (
 
-className={({isActive}) =>
+        <nav className={`navbar ${navbarTheme}`}>
 
-`navbar-logo ${isActive ? "active-logo":""}`
 
-}
+            <div className="navbar-container">
 
-onClick={closeMenu}
 
->
 
 
-<img
 
-src="/cowrieLogo.png"
 
-alt="Cowrie Protocol Logo"
+                <NavLink
 
-className="logo-image"
+                    to="/"
 
-/>
+                    end
 
+                    className={({ isActive }) =>
 
-<span>
+                        `navbar-logo ${isActive ? "active-logo" : ""}`
 
-Cowrie Protocol
+                    }
 
-</span>
+                    onClick={closeMenu}
 
+                >
 
-</NavLink>
 
+                    <img
 
+                        src={`${import.meta.env.BASE_URL}cowrieLogo.png`}
 
+                        alt="Cowrie Protocol Logo"
 
+                        className="logo-image"
 
+                    />
 
 
 
+                    <span>
+                        Cowrie Protocol
+                    </span>
 
-<button
 
-className="navbar-menu"
 
-onClick={()=>setOpen(!open)}
+                </NavLink>
 
-aria-label="Toggle navigation"
 
->
 
 
-{
 
-open
 
-?
 
-<X size={28}/>
 
-:
 
-<Menu size={28}/>
+                <button
 
-}
+                    className="navbar-menu"
 
+                    onClick={() => setOpen(!open)}
 
-</button>
+                    aria-label="Toggle navigation"
 
+                >
 
 
+                    {
 
+                        open
 
+                        ?
 
+                        <X size={28} />
 
+                        :
 
+                        <Menu size={28} />
 
-<div
+                    }
 
-className={`navbar-links ${open ? "active":""}`}
 
->
+                </button>
 
 
 
 
 
-<Dropdown
 
-label="Products"
 
-items={productItems}
 
-/>
 
+                <div
 
+                    className={`navbar-links ${open ? "active" : ""}`}
 
+                >
 
 
 
 
 
 
-<NavLink
+                    <Dropdown
 
-to="/ecosystem"
+                        label="Products"
 
-onClick={closeMenu}
+                        items={productItems}
 
-className={({isActive})=>
+                    />
 
-isActive ? "active-link" : ""
 
-}
 
->
 
-Ecosystem
 
-</NavLink>
 
 
 
 
+                    <NavLink
 
+                        to="/ecosystem"
 
+                        onClick={closeMenu}
 
+                        className={({ isActive }) =>
 
+                            isActive ? "active-link" : ""
 
-<NavLink
+                        }
 
-to="/about"
+                    >
 
-onClick={closeMenu}
+                        Ecosystem
 
-className={({isActive})=>
+                    </NavLink>
 
-isActive ? "active-link" : ""
 
-}
 
->
 
-About
 
-</NavLink>
 
 
 
 
+                    <NavLink
 
+                        to="/about"
 
+                        onClick={closeMenu}
 
+                        className={({ isActive }) =>
 
+                            isActive ? "active-link" : ""
 
-<NavLink
+                        }
 
-to="/docs"
+                    >
 
-onClick={closeMenu}
+                        About
 
-className={({isActive})=>
+                    </NavLink>
 
-isActive ? "active-link" : ""
 
-}
 
->
 
-Docs
 
-</NavLink>
 
 
 
 
+                    <NavLink
 
+                        to="/docs"
 
+                        onClick={closeMenu}
 
+                        className={({ isActive }) =>
 
+                            isActive ? "active-link" : ""
 
-<div className="launch-wrapper">
+                        }
 
+                    >
 
-<Button
+                        Docs
 
-variant="black"
+                    </NavLink>
 
-onClick={()=>window.open(
 
-"https://app.cowrieprotocol.com",
 
-"_blank"
 
-)}
 
->
 
-Launch App
 
-</Button>
 
 
-</div>
+                    <div className="launch-wrapper">
 
 
+                        <Button
 
+                            variant="black"
 
+                            onClick={() => {
 
+                                navigate("/launch");
 
-</div>
+                                closeMenu();
 
+                            }}
 
+                        >
 
+                            Launch App
 
+                        </Button>
 
-</div>
 
+                    </div>
 
-</nav>
 
-);
+
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+        </nav>
+
+    );
 
 
 }
