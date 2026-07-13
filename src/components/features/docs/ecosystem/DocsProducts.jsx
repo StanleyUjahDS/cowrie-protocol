@@ -4,23 +4,23 @@ import "./DocsProducts.css";
 const products=[
 
 {
-title:"Griot Wallet",
-text:"A non-custodial Web3 wallet connecting users to the Cowrie ecosystem."
+title:"Griot",
+text:"A decentralized social and financial interface designed to help users connect, interact, and participate within the Cowrie ecosystem through seamless onchain experiences."
 },
 
 {
 title:"Builders Oasis",
-text:"An educational platform empowering creators and learners."
+text:"A community-powered learning platform designed to educate, empower, and onboard users with Web3 knowledge, digital skills, and practical tools for the future of decentralized innovation."
 },
 
 {
 title:"RWA Marketplace",
-text:"A marketplace infrastructure for tokenized assets."
+text:"A marketplace infrastructure for tokenized assets, enabling users to discover, access, and interact with real-world value through transparent onchain systems."
 },
 
 {
 title:"DeFi Services",
-text:"Decentralized financial tools for ecosystem participation."
+text:"A decentralized yield and liquidity tool built to help users participate in ecosystem rewards, explore earning opportunities, and engage with sustainable onchain financial growth."
 }
 
 ];

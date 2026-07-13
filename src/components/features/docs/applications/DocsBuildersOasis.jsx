@@ -26,11 +26,7 @@ Builders Oasis
 
 
 <p>
-
-Builders Oasis is a decentralized learning
-ecosystem designed to connect educators,
-creators and learners through blockchain-powered
-education.
+Builders Oasis is a learning app designed to educate, onboard individuals to the world of Web3, and aempower them with digital skills through blockchain-powered education, community collaboration, and practical learning experiences.
 
 </p>
 
@@ -53,9 +49,8 @@ Learning Marketplace
 
 <p>
 
-Creators can publish courses, share knowledge
-and build educational communities while learners
-access structured learning experiences.
+A community-driven learning hub where educators and creators can publish high-quality educational content, while learners gain access to structured courses, practical resources, and interactive learning experiences tailored to every stage of their Web3 journey.
+.
 
 </p>
 
@@ -76,9 +71,7 @@ Creator Economy
 
 <p>
 
-Builders Oasis enables creators to participate
-in a sustainable education economy through
-course ownership and revenue opportunities.
+Builders Oasis empowers educators and content creators to monetize their expertise, grow their audience, and earn from the value they create through a sustainable, community-driven education economy built on transparency and shared opportunities.
 
 </p>
 
@@ -99,9 +92,8 @@ Blockchain Payments
 
 <p>
 
-The platform supports traditional and Web3
-payment systems, allowing users to access
-education using decentralized technology.
+Builders Oasis utilizes Web3 payment infrastructure to deliver secure and transparent transactions. By integrating with the Cowrie Ecosystem, learners can access educational experiences using blockchain technology while enjoying a seamless decentralized learning journey.
+
 
 </p>
 
@@ -122,9 +114,7 @@ Cowrie Integration
 
 <p>
 
-Builders Oasis connects with the wider Cowrie
-ecosystem through wallets, tokens and community
-incentives.
+Builders Oasis is fully integrated into the Cowrie Ecosystem, allowing users to seamlessly connect their wallets, participate in community initiatives, access ecosystem benefits, and engage with decentralized products powered by $HBADG and governed by the Cowrie Protocol.
 
 </p>
 

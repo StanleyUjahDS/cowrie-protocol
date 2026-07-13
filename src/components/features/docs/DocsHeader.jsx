@@ -31,7 +31,7 @@ Decentralized Ownership
 
 Explore the architecture, ecosystem,
 tokenomics and technology powering
-Cowrie Protocol — a decentralized
+Cowrie Protocol; a decentralized
 ecosystem connecting real-world assets,
 DeFi and community ownership.
 
