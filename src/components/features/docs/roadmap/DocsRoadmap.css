@@ -1,0 +1,77 @@
+.roadmap-container {
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+gap:1.5rem;
+
+
+margin-top:3rem;
+
+
+}
+
+
+
+.roadmap-card {
+
+
+padding:2rem;
+
+
+border-left:3px solid var(--gold);
+
+
+background:var(--bg-secondary);
+
+
+border-radius:0 24px 24px 0;
+
+
+}
+
+
+
+.roadmap-card span {
+
+
+font-size:.8rem;
+
+
+text-transform:uppercase;
+
+
+color:var(--gold);
+
+
+font-weight:700;
+
+
+}
+
+
+
+.roadmap-card h3 {
+
+
+margin:1rem 0;
+
+
+}
+
+
+
+.roadmap-card p {
+
+
+color:var(--text-secondary);
+
+
+line-height:1.8;
+
+
+}

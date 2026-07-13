@@ -1,56 +1,34 @@
 import Layout from "../components/common/layout/Layout/Layout";
-import Aside from "../components/common/layout/Aside/Aside";
-
-import "./Docs.css";
+import DocsSidebar from "../components/features/docs/navigation/DocsSidebar";
 
 import DocsHeader from "../components/features/docs/DocsHeader";
-import DocsIntroduction from "../components/features/docs/DocsIntroduction";
 import DocsComponents from "../components/features/docs/DocsComponents";
+
+import "./Docs.css";
 
 
 function Docs(){
 
-return(
+return (
 
-<Layout aside={<Aside/>}>
+<Layout aside={<DocsSidebar/>}>
 
 
-<main className="docs-page">
+<div className="docs-page">
 
 
 <DocsHeader />
 
-<DocsIntroduction />
 
 <DocsComponents />
 
 
-<section className="docs-section">
-
-<h2>
-Getting Started
-</h2>
-
-<p>
-Developers can explore the ecosystem, integrate available tools, and build
-applications using Cowrie Protocol infrastructure.
-</p>
-
-
-<button className="docs-button">
-Start Building
-</button>
-
-
-</section>
-
-
-</main>
+</div>
 
 
 </Layout>
 
-)
+);
 
 }
 

@@ -3,25 +3,65 @@ import "./DocsHeader.css";
 
 function DocsHeader(){
 
-return(
 
-<header className="docs-header">
+return (
+
+<section className="docs-header">
+
+
+<div className="docs-header-content">
+
+
+<span className="docs-badge">
+Cowrie Protocol Documentation
+</span>
+
+
 
 <h1>
-Cowrie Protocol Documentation
+Building the Future of
+<span>
+Decentralized Ownership
+</span>
 </h1>
 
 
+
 <p>
-Explore the architecture, ecosystem, and technology behind Cowrie Protocol.
-Learn how real-world assets are brought on-chain through decentralized
-infrastructure.
+
+Explore the architecture, ecosystem,
+tokenomics and technology powering
+Cowrie Protocol — a decentralized
+ecosystem connecting real-world assets,
+DeFi and community ownership.
+
 </p>
 
 
-</header>
 
-)
+<div className="docs-header-actions">
+
+
+<button>
+Read Whitepaper
+</button>
+
+
+
+<button>
+Start Building
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+);
 
 }
 

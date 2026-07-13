@@ -1,0 +1,221 @@
+/* ==========================
+   DOC SIDEBAR
+========================== */
+
+
+.docs-sidebar {
+
+
+    width:280px;
+
+
+    height:calc(100vh - 90px);
+
+
+    position:sticky;
+
+
+    top:90px;
+
+
+    padding:2rem 1.5rem;
+
+
+    overflow-y:auto;
+
+
+    background:var(--bg-secondary);
+
+
+    border-right:1px solid var(--border);
+
+
+}
+
+
+
+
+
+.docs-sidebar h3 {
+
+
+    font-size:1.2rem;
+
+
+    font-weight:800;
+
+
+    margin-bottom:2rem;
+
+
+    color:var(--text-primary);
+
+
+}
+
+
+
+
+
+
+/* GROUP */
+
+
+.docs-sidebar-group {
+
+
+    margin-bottom:2rem;
+
+
+}
+
+
+
+
+
+.docs-sidebar-group h4 {
+
+
+    font-size:.8rem;
+
+
+    text-transform:uppercase;
+
+
+    letter-spacing:.12em;
+
+
+    color:var(--text-muted);
+
+
+    margin-bottom:.8rem;
+
+
+}
+
+
+
+
+
+
+
+.docs-sidebar-group ul {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:.4rem;
+
+
+}
+
+
+
+
+
+
+
+.docs-sidebar-group a {
+
+
+    display:block;
+
+
+    padding:.55rem .8rem;
+
+
+    border-radius:10px;
+
+
+    color:var(--text-secondary);
+
+
+    font-size:.95rem;
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+
+
+.docs-sidebar-group a:hover {
+
+
+    color:var(--gold);
+
+
+    background:
+
+    color-mix(
+
+        in srgb,
+
+        var(--gold) 12%,
+
+        transparent
+
+    );
+
+
+    transform:translateX(5px);
+
+
+}
+
+
+
+
+
+.docs-sidebar-group a.active {
+
+
+    color:var(--gold);
+
+
+    background:
+
+    color-mix(
+
+        in srgb,
+
+        var(--gold) 18%,
+
+        transparent
+
+    );
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+.docs-sidebar {
+
+
+    display:none;
+
+
+}
+
+
+}

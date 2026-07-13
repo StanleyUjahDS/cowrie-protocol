@@ -1,0 +1,77 @@
+.security-grid {
+
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+
+gap:1.5rem;
+
+
+margin-top:3rem;
+
+
+}
+
+
+
+.security-grid div {
+
+
+padding:2rem;
+
+
+border-radius:24px;
+
+
+background:var(--bg-secondary);
+
+
+border:1px solid var(--border);
+
+
+}
+
+
+
+.security-grid h3 {
+
+
+margin-bottom:1rem;
+
+
+color:var(--gold);
+
+
+}
+
+
+
+.security-grid p {
+
+
+color:var(--text-secondary);
+
+
+line-height:1.8;
+
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.security-grid {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+}

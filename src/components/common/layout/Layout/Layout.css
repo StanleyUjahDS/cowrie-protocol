@@ -2,6 +2,7 @@
    MAIN LAYOUT
 =========================== */
 
+
 .layout {
 
     min-height:100vh;
@@ -31,9 +32,30 @@
 
     width:100%;
 
-    padding-top:120px; /* space below fixed navbar */
+    display:flex;
 
-    box-sizing:border-box;
+    align-items:stretch;
+
+}
+
+
+
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+
+.layout-body aside {
+
+    width:280px;
+
+    flex-shrink:0;
+
+    background:var(--bg-secondary);
+
+    border-right:1px solid var(--border);
 
 }
 
@@ -48,7 +70,9 @@
 
 .layout-body main {
 
-    width:100%;
+    flex:1;
+
+    min-width:0;
 
 }
 
@@ -57,7 +81,7 @@
 
 
 /* ===========================
-   PAGE CONTENT
+   PAGE WRAPPER
 =========================== */
 
 
@@ -65,55 +89,24 @@
 
     width:100%;
 
-    box-sizing:border-box;
+    min-height:100%;
 
 }
-
-
 
 
 
 
 
 /* ===========================
-   SIDEBAR DOCUMENTATION
+   NORMAL PAGES WITHOUT SIDEBAR
 =========================== */
 
 
-.layout-body:has(aside){
+.layout-body > main:only-child {
 
-    display:flex;
-
-}
-
-
-
-.layout-body aside {
-
-    width:260px;
-
-    flex-shrink:0;
-
-    border-right:1px solid var(--border);
-
-    padding:30px;
-
-    background:var(--bg-secondary);
+    width:100%;
 
 }
-
-
-
-
-
-.layout-body:has(aside) main {
-
-    flex:1;
-
-}
-
-
-
 
 
 
@@ -129,18 +122,9 @@
 
     .layout-body {
 
-        padding-top:100px;
-
-    }
-
-
-
-    .layout-body:has(aside){
-
         flex-direction:column;
 
     }
-
 
 
     .layout-body aside {
@@ -160,9 +144,6 @@
 
 
 
-
-
-
 /* ===========================
    MOBILE
 =========================== */
@@ -171,9 +152,9 @@
 @media(max-width:600px){
 
 
-    .layout-body {
+    .layout-body aside {
 
-        padding-top:90px;
+        display:none;
 
     }
 

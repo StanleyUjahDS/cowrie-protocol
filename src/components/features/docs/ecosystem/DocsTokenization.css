@@ -1,0 +1,69 @@
+.docs-tokenization p {
+
+
+max-width:800px;
+
+color:var(--text-secondary);
+
+line-height:1.8;
+
+
+}
+
+
+
+.tokenization-points {
+
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:1.5rem;
+
+margin-top:3rem;
+
+
+}
+
+
+
+.tokenization-points div {
+
+
+padding:2rem;
+
+border-radius:22px;
+
+background:var(--bg-secondary);
+
+border:1px solid var(--border);
+
+
+}
+
+
+
+.tokenization-points h3 {
+
+
+margin-bottom:1rem;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.tokenization-points {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+}
