@@ -2,570 +2,214 @@
    ECOSYSTEM OVERVIEW
 =========================== */
 
-
 .ecosystem-overview {
-
-    width:100%;
-
+  width: 100%;
 }
-
-
-
-
 
 /* ===========================
    SWIPER
 =========================== */
 
-
 .ecosystem-overview .swiper {
-
-    width:100%;
-
-    padding:3rem 0 5rem;
-
+  width: 100%;
+  padding: 3rem 0 5rem;
 }
-
-
-
-
-
-
 
 /* ===========================
    SLIDE EFFECT
 =========================== */
 
-
 .ecosystem-overview .swiper-slide {
-
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:stretch;
-
-
-    opacity:.45;
-
-
-    transform:scale(.86);
-
-
-    transition:.45s ease;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  opacity: 0.45;
+  transform: scale(0.86);
+  transition: 0.45s ease;
 }
 
-
-
-
-
-.ecosystem-overview 
-.swiper-slide-active {
-
-
-    opacity:1;
-
-
-    transform:scale(1);
-
-
+.ecosystem-overview .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
 }
-
-
-
-
 
 /* ===========================
    CARD
 =========================== */
 
 .ecosystem-overview-card {
-
-    width:100%;
-
-    min-height:480px;
-
-    padding:2.5rem 2.5rem 0;
-
-
-    border-radius:35px;
-
-
-    background:
-
-    linear-gradient(
-
-        160deg,
-
-        transparent,
-
-        rgba(126,221,208,.12)
-
-    );
-
-
-    border:1px solid var(--border);
-
-
-    display:flex;
-
-    flex-direction:column;
-
-
-    overflow:hidden;
-
-
-    transition:.35s ease;
-
+  width: 100%;
+  min-height: 480px;
+  padding: 2.5rem 2.5rem 0;
+  border-radius: 35px;
+  background: linear-gradient(160deg, transparent, rgba(126, 221, 208, 0.12));
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.35s ease;
 }
 
 /* ===========================
    CONTENT
 =========================== */
 
-
 .ecosystem-overview-content {
-
-
-    display:flex;
-
-
-    flex-direction:column;
-
-
-    align-items:center;
-
-
-    text-align:center;
-
-
-    gap:1.2rem;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
 }
-
-
-
-
-
-
 
 /* ===========================
    TITLE
 =========================== */
 
-
 .ecosystem-overview-content h2 {
-
-
-    margin:0;
-
-
-    max-width:12ch;
-
-
-    font-size:
-
-
-    clamp(1.8rem,3vw,2.5rem);
-
-
-
-    font-weight:800;
-
-
-
-    line-height:1.15;
-
-
-
-    letter-spacing:-.03em;
-
-
-
-    color:var(--text-primary);
-
-
-
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
 }
-
-
-
-
-
-
 
 .ecosystem-overview-content h2::after {
-
-
-    content:"";
-
-
-    display:block;
-
-
-    width:70px;
-
-
-    height:3px;
-
-
-    margin:1rem auto 0;
-
-
-    border-radius:50px;
-
-
-    background:var(--gold);
-
-
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 1rem auto 0;
+  border-radius: 50px;
+  background: var(--gold);
 }
-
-
-
-
-
-
-
 
 /* ===========================
    DESCRIPTION
 =========================== */
 
-
 .ecosystem-overview-content p {
-
-
-    margin:0;
-
-
-    max-width:35ch;
-
-
-    line-height:1.8;
-
-
-    color:var(--text-secondary);
-
-
+  margin: 0;
+  max-width: 35ch;
+  line-height: 1.8;
+  color: var(--text-secondary);
 }
-
-
-
-
-
-
 
 /* ===========================
    IMAGE
 =========================== */
 
-
 .ecosystem-overview-image {
-
-
-    width:100%;
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    align-items:flex-end;
-
-
-    margin-top:auto;
-
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
 }
-
-
-
-
 
 .ecosystem-overview-image img {
-
-
-    width:100%;
-
-
-    max-width:330px;
-
-
-    height:auto;
-
-
-    display:block;
-
-
-    object-fit:contain;
-
-
-    object-position:center bottom;
-
-
-    transition:.45s ease;
-
-
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  object-fit: contain;
+  object-position: center bottom;
+  transition: 0.45s ease;
 }
 
-
-
-
-
-
-
-.ecosystem-overview-card:hover 
-.ecosystem-overview-image img {
-
-
-    transform:translateY(-8px);
-
-
+.ecosystem-overview-card:hover .ecosystem-overview-image img {
+  transform: translateY(-8px);
 }
-
-
-
-
-
-
 
 /* ===========================
    NAVIGATION
 =========================== */
 
-
-.ecosystem-overview 
-.swiper-button-next,
-.ecosystem-overview 
-.swiper-button-prev {
-
-
-    color:var(--gold);
-
-
-    transition:.3s ease;
-
-
+.ecosystem-overview .swiper-button-next,
+.ecosystem-overview .swiper-button-prev {
+  color: var(--gold);
+  transition: 0.3s ease;
 }
 
-
-
-
-
-.ecosystem-overview 
-.swiper-button-next:hover,
-.ecosystem-overview 
-.swiper-button-prev:hover {
-
-
-    transform:scale(1.15);
-
-
-    color:var(--gold-light);
-
-
+.ecosystem-overview .swiper-button-next:hover,
+.ecosystem-overview .swiper-button-prev:hover {
+  transform: scale(1.15);
+  color: var(--gold-light);
 }
-
-
-
-
-
-
 
 /* ===========================
    PAGINATION
 =========================== */
 
-
-.ecosystem-overview 
-.swiper-pagination-bullet {
-
-
-    width:10px;
-
-
-    height:10px;
-
-
-    background:var(--text-muted);
-
-
-    opacity:.4;
-
-
-    transition:.3s ease;
-
-
+.ecosystem-overview .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--text-muted);
+  opacity: 0.4;
+  transition: 0.3s ease;
 }
 
-
-
-
-
-.ecosystem-overview 
-.swiper-pagination-bullet-active {
-
-
-    width:28px;
-
-
-    border-radius:20px;
-
-
-    background:var(--gold);
-
-
-    opacity:1;
-
-
+.ecosystem-overview .swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 20px;
+  background: var(--gold);
+  opacity: 1;
 }
-
-
-
-
-
-
 
 /* ===========================
    TABLET
 =========================== */
 
+@media (max-width: 1024px) {
+  .ecosystem-overview-card {
+    min-height: 430px;
+    padding: 2rem 2rem 0;
+  }
 
-@media(max-width:1024px){
-
-
-    .ecosystem-overview-card {
-
-
-        min-height:430px;
-
-
-        padding:2rem 2rem 0;
-
-
-    }
-
-
-
-    .ecosystem-overview-image img {
-
-
-        max-width:280px;
-
-
-    }
-
-
+  .ecosystem-overview-image img {
+    max-width: 280px;
+  }
 }
-
-
-
-
-
-
 
 /* ===========================
    MOBILE
 =========================== */
 
+@media (max-width: 768px) {
+  .ecosystem-overview .swiper {
+    padding: 2rem 0 4rem;
+  }
 
-@media(max-width:768px){
+  .ecosystem-overview-card {
+    min-height: 400px;
+    border-radius: 28px;
+  }
 
+  .ecosystem-overview-image img {
+    max-width: 240px;
+  }
 
-    .ecosystem-overview .swiper {
-
-
-        padding:2rem 0 4rem;
-
-
-    }
-
-
-
-    .ecosystem-overview-card {
-
-
-        min-height:400px;
-
-
-        border-radius:28px;
-
-
-    }
-
-
-
-    .ecosystem-overview-image img {
-
-
-        max-width:240px;
-
-
-    }
-
-
-
-    .ecosystem-overview 
-    .swiper-button-next,
-    .ecosystem-overview 
-    .swiper-button-prev {
-
-
-        display:none;
-
-
-    }
-
-
+  .ecosystem-overview .swiper-button-next,
+  .ecosystem-overview .swiper-button-prev {
+    display: none;
+  }
 }
-
-
-
-
-
-
 
 /* ===========================
    SMALL MOBILE
 =========================== */
 
+@media (max-width: 480px) {
+  .ecosystem-overview-content h2 {
+    font-size: 1.55rem;
+  }
 
-@media(max-width:480px){
+  .ecosystem-overview-content p {
+    font-size: 0.95rem;
+  }
 
-
-    .ecosystem-overview-content h2 {
-
-
-        font-size:1.55rem;
-
-
-    }
-
-
-
-    .ecosystem-overview-content p {
-
-
-        font-size:.95rem;
-
-
-    }
-
-
-
-    .ecosystem-overview-image img {
-
-
-        max-width:210px;
-
-
-    }
-
-
+  .ecosystem-overview-image img {
+    max-width: 210px;
+  }
 }

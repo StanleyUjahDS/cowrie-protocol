@@ -18,7 +18,7 @@ return(
 
 <SectionTitle
 
-title="Meet The Team"
+title="Meet The Rest of The Team"
 
 description="
 Engineers, designers and contributors helping build the Cowrie ecosystem.

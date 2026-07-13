@@ -18,9 +18,12 @@
 
 
 
+
+
 /* ===========================
    BODY
 =========================== */
+
 
 .layout-body {
 
@@ -28,15 +31,20 @@
 
     width:100%;
 
-    padding-top:60px; /* space below navbar */
+    padding-top:120px; /* space below fixed navbar */
+
+    box-sizing:border-box;
 
 }
+
+
 
 
 
 /* ===========================
    MAIN CONTENT
 =========================== */
+
 
 .layout-body main {
 
@@ -46,9 +54,12 @@
 
 
 
+
+
 /* ===========================
    PAGE CONTENT
 =========================== */
+
 
 .page-content {
 
@@ -57,6 +68,10 @@
     box-sizing:border-box;
 
 }
+
+
+
+
 
 
 
@@ -83,7 +98,7 @@
 
     padding:30px;
 
-    background:var(--card-bg);
+    background:var(--bg-secondary);
 
 }
 
@@ -99,16 +114,22 @@
 
 
 
+
+
+
+
+
 /* ===========================
    TABLET
 =========================== */
+
 
 @media(max-width:900px){
 
 
     .layout-body {
 
-        padding-top:80px;
+        padding-top:100px;
 
     }
 
@@ -121,6 +142,7 @@
     }
 
 
+
     .layout-body aside {
 
         width:100%;
@@ -131,7 +153,11 @@
 
     }
 
+
 }
+
+
+
 
 
 
@@ -141,13 +167,15 @@
    MOBILE
 =========================== */
 
+
 @media(max-width:600px){
 
 
     .layout-body {
 
-        padding-top:70px;
+        padding-top:90px;
 
     }
+
 
 }

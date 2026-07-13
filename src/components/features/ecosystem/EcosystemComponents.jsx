@@ -27,10 +27,10 @@ function EcosystemComponents(){
 const components = [
 
     {
-        title:"Infrastructure",
+        title:"Decentralized Infrastructure",
 
         description:
-        "Core blockchain infrastructure powering decentralized applications.",
+        "Unlock secure, transparent, and accessible financial opportunities without barriers.",
 
         icon:Layers
     },
@@ -47,10 +47,10 @@ const components = [
 
 
     {
-        title:"Developer Resources",
+        title:"Developer Hub",
 
         description:
-        "SDKs, APIs and documentation for builders creating on Cowrie.",
+        "Empowering developers with resources to build for their community and the ecosystem.",
 
         icon:BookOpen
     },

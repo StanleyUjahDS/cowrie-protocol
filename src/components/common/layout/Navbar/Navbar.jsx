@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 import { Menu, X } from "lucide-react";
@@ -13,6 +13,19 @@ function Navbar() {
 
 
 const [open,setOpen] = useState(false);
+
+
+const location = useLocation();
+
+
+
+const closeMenu = ()=>{
+
+    setOpen(false);
+
+};
+
+
 
 
 
@@ -37,19 +50,74 @@ const productItems = [
 
 
 
+
+
+
+
+const navbarTheme =
+
+location.pathname.includes("/about")
+
+?
+
+"about-active"
+
+
+:
+
+location.pathname.includes("/ecosystem")
+
+?
+
+"ecosystem-active"
+
+
+:
+
+location.pathname.includes("/docs")
+
+?
+
+"docs-active"
+
+
+:
+
+"";
+
+
+
+
+
+
+
+
 return (
 
-<nav className="navbar">
+<nav className={`navbar ${navbarTheme}`}>
+
 
 
 <div className="navbar-container">
 
 
 
-<Link 
-to="/" 
-className="navbar-logo"
-onClick={()=>setOpen(false)}
+
+
+<NavLink
+
+to="/"
+
+end
+
+className={({isActive}) =>
+
+`navbar-logo ${isActive ? "active-logo":""}`
+
+}
+
+onClick={closeMenu}
+
 >
 
 
@@ -65,11 +133,17 @@ className="logo-image"
 
 
 <span>
+
 Cowrie Protocol
+
 </span>
 
 
-</Link>
+</NavLink>
+
+
+
+
 
 
 
@@ -81,15 +155,25 @@ className="navbar-menu"
 
 onClick={()=>setOpen(!open)}
 
+aria-label="Toggle navigation"
+
 >
 
+
 {
-open 
+
+open
+
 ?
+
 <X size={28}/>
+
 :
+
 <Menu size={28}/>
+
 }
+
 
 </button>
 
@@ -97,11 +181,18 @@ open
 
 
 
+
+
+
+
 <div
 
-className={`navbar-links ${open ? "active" : ""}`}
+className={`navbar-links ${open ? "active":""}`}
 
 >
+
+
+
 
 
 <Dropdown
@@ -113,30 +204,92 @@ items={productItems}
 />
 
 
-<Link 
+
+
+
+
+
+
+
+<NavLink
+
 to="/ecosystem"
-onClick={()=>setOpen(false)}
+
+onClick={closeMenu}
+
+className={({isActive})=>
+
+isActive ? "active-link" : ""
+
+}
+
 >
+
 Ecosystem
-</Link>
+
+</NavLink>
 
 
-<Link 
+
+
+
+
+
+
+
+<NavLink
+
 to="/about"
-onClick={()=>setOpen(false)}
+
+onClick={closeMenu}
+
+className={({isActive})=>
+
+isActive ? "active-link" : ""
+
+}
+
 >
+
 About
-</Link>
+
+</NavLink>
 
 
 
-<Link 
+
+
+
+
+
+
+<NavLink
+
 to="/docs"
-onClick={()=>setOpen(false)}
->
-Docs
-</Link>
 
+onClick={closeMenu}
+
+className={({isActive})=>
+
+isActive ? "active-link" : ""
+
+}
+
+>
+
+Docs
+
+</NavLink>
+
+
+
+
+
+
+
+
+
+<div className="launch-wrapper">
 
 
 <Button
@@ -144,8 +297,11 @@ Docs
 variant="black"
 
 onClick={()=>window.open(
+
 "https://app.cowrieprotocol.com",
+
 "_blank"
+
 )}
 
 >
@@ -155,8 +311,16 @@ Launch App
 </Button>
 
 
+</div>
+
+
+
+
+
 
 </div>
+
+
 
 
 

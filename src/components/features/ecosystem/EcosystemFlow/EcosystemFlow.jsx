@@ -65,22 +65,23 @@ function EcosystemFlow() {
 
                     <EcosystemProductCard
 
-                        icon="💳"
+                        icon="🦸‍♂️"
 
-                        title="Cowrie Wallet"
+                        title="Griot"
 
                         description="
-                        A secure gateway for digital ownership,
-                        asset management and blockchain interaction.
+                        Griot empowers HBadgers (community members) to connect, engage, and earn 
+                        through a privacy-first decentralized social experience.
+
                         "
 
                         features={[
 
-                            "Self-custody wallet",
+                            "Anonymous communicatio",
 
-                            "Digital asset management",
+                            "Revenue Sharing",
 
-                            "Secure transactions"
+                            "Peer-to-peer engagement"
 
                         ]}
 
@@ -134,17 +135,19 @@ function EcosystemFlow() {
                         title="Cowrie DApp"
 
                         description="
-                        Decentralized applications powered by
-                        Cowrie blockchain infrastructure.
+                        The Cowrie DApp enables users to invest in tokenized real-world 
+                        assets(RWA), unlocking global opportunities through secure and 
+                        transparent blockchain technology.
+
                         "
 
                         features={[
 
-                            "Smart contracts",
+                            "Borderless investing",
 
                             "Digital assets",
 
-                            "On-chain services"
+                            "Yield Farming"
 
                         ]}
 
@@ -194,22 +197,24 @@ function EcosystemFlow() {
 
 
                     <span>
-                        Blockchain
+                       Blockchain Technology
+
                     </span>
 
 
                     <span>
-                        Smart Contracts
+                        Web3 Education
+
                     </span>
 
 
                     <span>
-                        Identity
+                        Revenue Sharing
                     </span>
 
 
                     <span>
-                        APIs
+                        Digital Ownership
                     </span>
 
 

@@ -72,7 +72,7 @@ const principles = [
         title:"Community First",
 
         description:
-        "The ecosystem grows through participation, collaboration and shared value creation among every contributor."
+        "The ecosystem grows through participation, collaboration and shared value creation among every HBadgers (community contributor)."
 
     }
 
