@@ -10,7 +10,7 @@ function Ecosystem() {
 
 const img1 = new URL(
 
-    "../../../../assets/images/dashboard.png",
+    "../../../../assets/images/goldenglobe.png",
 
     import.meta.url
 
