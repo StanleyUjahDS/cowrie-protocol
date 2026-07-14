@@ -269,7 +269,7 @@ transition={{
 
 {secondaryButton && (
 
-<Button variant="outline">
+<Button variant="primary">
 
 {secondaryButton}
 

@@ -77,7 +77,7 @@ function EcosystemFlow() {
 
                         features={[
 
-                            "Anonymous communicatio",
+                            "Anonymous communication",
 
                             "Revenue Sharing",
 
