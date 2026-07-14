@@ -1,5 +1,6 @@
+import buildImage from "../assets/images/build-blog.jpeg";
+import educationImage from "../assets/images/Education-blog.jpeg";
 import buildersImage from "../assets/images/builders_oasis.png";
-
 
 export const blogData = [
 
@@ -16,7 +17,7 @@ export const blogData = [
         "Ecosystem",
 
         image:
-        buildersImage,
+        buildeImage,
 
         date:
         "July 2026",
@@ -40,7 +41,7 @@ export const blogData = [
         "Developers",
 
         image:
-        buildersImage,
+        educationImage,
 
         date:
         "July 2026",
