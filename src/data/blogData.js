@@ -17,7 +17,7 @@ export const blogData = [
         "Ecosystem",
 
         image:
-        buildeImage,
+        buildImage,
 
         date:
         "July 2026",
