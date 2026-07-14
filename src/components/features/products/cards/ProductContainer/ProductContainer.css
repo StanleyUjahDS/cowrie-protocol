@@ -231,46 +231,39 @@
 /* ===========================
    LARGE IMAGE
 =========================== */
-
-
 .product-container-image {
 
-    width:100%;
+    width: 100%;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    padding:0 2rem 2rem;
-
+    padding: 0 2rem 2rem;
 }
-
-
-
-
 
 
 
 .product-container-image img {
 
-    width:100%;
+    width: 100%;
 
-    max-width:1100px;
+    max-width: 1100px;
 
-    height:auto;
+    height: auto;
 
-    max-height:700px;
+    max-height: 700px;
 
-    object-fit:contain;
+    object-fit: contain;
 
-    display:block;
+    display: block;
+
     border-radius: 18px;
 
+    overflow: hidden;
 }
-
-
 
 
 
