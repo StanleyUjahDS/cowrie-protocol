@@ -9,9 +9,9 @@ import "./EcosystemOverview.css";
 
 import rwaImage from "../../../assets/images/rwa-image.png";
 import revenueImage from "../../../assets/images/share-image.png";
-import yieldImage from "../../../assets/images/yield-image.png";
-import web3Image from "../../../assets/images/hbadgerLogo.png";
-import defiImage from "../../../assets/images/2.png";
+import yieldImage from "../../../assets/images/yieldfarming.png";
+import web3Image from "../../../assets/images/2.png";
+import educationImage from "../../../assets/images/educating.png";
 
 const slides = [
   {
@@ -40,14 +40,15 @@ const slides = [
     title: "Web3 Sensitization",
     description:
       "Turning curiosity into competence, one resilient badger at a time by educating communities and empowering users to confidently participate in the decentralized future.",
-    image: web3Image
+    image:educationImage
+
   },
   {
   label: "Decentralized Social",
   title: "Privacy-First Networking",
   description:
     "Connect, communicate, and engage freely in a decentralized social ecosystem where privacy, anonymity, community rewards, and user ownership come first.",
-  image: defiImage
+  image: web3Image
 }
 ];
 
