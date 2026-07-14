@@ -62,7 +62,7 @@ const coreTeam = [
 {
     name:"Frankly Alfa",
 
-    role:"Communityand Product Lead",
+    role:"Community and Product Lead",
 
     image:xperience,
 

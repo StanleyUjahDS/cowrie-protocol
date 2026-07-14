@@ -189,22 +189,14 @@
    IMAGE ENHANCEMENT
 =========================== */
 
-/*
-.dapp img {
 
+.dapp .product-container-image img {
 
-    filter:
+    box-shadow:
 
-    drop-shadow(
+    0 35px 60px rgba(0,0,0,.5);
 
-        0 35px 60px rgba(0,0,0,.5)
-
-    );
-
-
-} */
-
-
+}
 
 
 
