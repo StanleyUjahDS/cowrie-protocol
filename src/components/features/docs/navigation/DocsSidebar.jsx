@@ -1,4 +1,5 @@
 import "./DocsSidebar.css";
+import { useEffect, useState } from "react";
 
 
 const navigation = [
@@ -65,12 +66,12 @@ const navigation = [
         items:[
             {
                 name:"Ecosystem Tokens",
-                link:"#tokens"
+                link:"#ecosystem-tokens"
             },
 
             {
                 name:"Revenue Sharing",
-                link:"#revenue"
+                link:"#revenue-sharing"
             }
         ]
     },
@@ -158,6 +159,38 @@ const navigation = [
 
 function DocsSidebar(){
 
+    const [activeSection, setActiveSection] = useState(
+        window.location.hash.slice(1) || "overview"
+    );
+
+    useEffect(() => {
+        const sections = navigation
+            .flatMap((group) => group.items)
+            .map((item) => document.getElementById(item.link.slice(1)))
+            .filter(Boolean);
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visible = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+                if (visible[0]) {
+                    setActiveSection(visible[0].target.id);
+                }
+            },
+            { rootMargin: "-110px 0px -65% 0px", threshold: 0 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
+
+    const handleNavigation = (sectionId) => {
+        setActiveSection(sectionId);
+    };
+
 
 return (
 
@@ -195,7 +228,12 @@ section.items.map((item,i)=>(
 
 <li key={i}>
 
-<a href={item.link}>
+<a
+    href={item.link}
+    className={activeSection === item.link.slice(1) ? "active" : ""}
+    aria-current={activeSection === item.link.slice(1) ? "location" : undefined}
+    onClick={() => handleNavigation(item.link.slice(1))}
+>
 
 {item.name}
 

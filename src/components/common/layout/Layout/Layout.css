@@ -32,6 +32,9 @@
 
     width:100%;
 
+    /* Keep routed page content clear of the fixed navbar. */
+    padding-top:78px;
+
     display:flex;
 
     align-items:stretch;
@@ -152,6 +155,12 @@
 
 
 @media(max-width:600px){
+
+    .layout-body {
+
+        padding-top:70px;
+
+    }
 
 
     .layout-body aside {
