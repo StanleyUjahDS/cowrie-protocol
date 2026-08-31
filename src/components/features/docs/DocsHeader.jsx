@@ -1,6 +1,5 @@
 import "./DocsHeader.css";
 
-import Button from "../../common/ui/Button/Button.jsx"
 function DocsHeader(){
 
 
@@ -41,16 +40,16 @@ DeFi and community ownership.
 
 <div className="docs-header-actions">
 
-<Button variant="mid-green">
+<a href="#whitepaper" className="ui-button mid-green">
 Read Whitepaper
-</Button>
+</a>
 
 
-<Button variant="mid-green">
+<a href="#developers" className="ui-button mid-green">
 
 Start Building
 
-</Button>
+</a>
 </div>
 
 

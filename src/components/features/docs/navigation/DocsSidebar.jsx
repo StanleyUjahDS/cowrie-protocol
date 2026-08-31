@@ -161,7 +161,7 @@ function DocsSidebar(){
 
 return (
 
-<nav className="docs-sidebar">
+<nav className="docs-sidebar" aria-label="Documentation sections">
 
 
 <h3>

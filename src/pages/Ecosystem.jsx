@@ -15,12 +15,15 @@ import EcosystemAudience from "../components/features/ecosystem/EcosystemAudienc
 import LatestUpdates from "../components/features/ecosystem/LatestUpdates/LatestUpdates";
 
 import FAQ from "../components/features/home/Faq";
+import SEO from "../components/common/SEO/SEO";
 
 function Ecosystem(){
 
 return (
 
 <Layout>
+
+<SEO title="Ecosystem" description="Discover the Cowrie Protocol ecosystem, infrastructure, products, benefits, and community-owned opportunities." />
 
 <main className="ecosystem-page">
 

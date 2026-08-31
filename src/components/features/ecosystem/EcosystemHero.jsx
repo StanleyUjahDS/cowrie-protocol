@@ -6,10 +6,7 @@ import EcosystemCard from "./cards/EcosystemCard/EcosystemCard";
 
 import ecosystemImage from "../../../assets/images/ecosystem-image.png";
 
-import {
-    fadeUp,
-    heroImage
-} from "../../../animations/variants";
+import { fadeUp } from "../../../animations/variants";
 
 
 

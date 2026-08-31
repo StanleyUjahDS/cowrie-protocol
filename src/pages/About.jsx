@@ -28,6 +28,7 @@ import Contributors from "../components/features/about/Contributors";
 import CommunityCTA from "../components/features/about/CommunityCTA/CommunityCTA";
 
 import FAQ from "../components/features/home/Faq";
+import SEO from "../components/common/SEO/SEO";
 
 function About(){
 
@@ -35,6 +36,8 @@ function About(){
 return (
 
 <Layout>
+
+<SEO title="About Cowrie Protocol" description="Learn about Cowrie Protocol’s mission, vision, team, contributors, and community." />
 
 
 <main className="about-page">

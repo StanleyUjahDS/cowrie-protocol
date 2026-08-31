@@ -1,5 +1,12 @@
 :root {
 
+/* Shared component aliases */
+--accent-color: var(--green);
+--border-color: var(--border);
+--radius-sm: 8px;
+--radius-md: 16px;
+--radius-lg: 24px;
+
 
 /* ===========================
    LIGHT MODE
@@ -52,6 +59,10 @@
 --border:
 
 rgba(0,59,51,.15);
+
+/* Aliases are declared again after their source values for broad browser support. */
+--accent-color: #00A991;
+--border-color: rgba(0,59,51,.15);
 
 
 
@@ -248,6 +259,9 @@ rgba(0,59,51,.95)
 
 
 rgba(221,168,80,.22);
+
+--accent-color: #00A991;
+--border-color: rgba(221,168,80,.22);
 
 
 

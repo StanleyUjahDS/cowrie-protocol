@@ -32,33 +32,6 @@ const coreTeam = [
 
 },
 
-
-
-
-{
-    name:"Jalen Wall",
-
-    role:"Co-Protocol Lead & Developer",
-
-    image:jalen,
-
-    expertise:
-    "Protocol Architecture • Smart Contract Engineering • AI Systems Integration • Infrastructure Development • Former OpenAI Contributor",
-
-    bio:
-    "Oversees protocol architecture and operational infrastructure, applying experience from previous work with ChatGPT to build secure smart contracts, scalable systems and reliable core components for the Cowrie ecosystem.",
-
-    twitter:"https://x.com/gldnjalen",
-
-    linkedin:"#",
-
-    github:"#"
-
-},
-
-
-
-
 {
     name:"Frankly Alfa",
 
@@ -183,30 +156,7 @@ const teamMembers = [
 
     github:"#"
 
-},
-
-{
-    name:"Summerland",
-
-    role:"Content Writer ",
-
-    image:summerland,
-
-    expertise:
-    "Community Growth • Copywriting • Web3 Education • Content Strategy • Whitepaper & Product Writing",
-
-    bio:
-    "Supports Cowrie’s growth through clear communication, community engagement and high‑quality written content, including product documentation and whitepaper development.",
-
-    twitter:"https://x.com/coresummerland",
-
-    linkedin:"#",
-
-    github:"#"
-
 }
-
-
 ];
 
 

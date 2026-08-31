@@ -10,6 +10,7 @@ import Docs from "../pages/Docs";
 import About from "../pages/About";
 import Ecosystem from "../pages/Ecosystem";
 import LaunchApp from "../pages/LaunchApp";
+import ScrollToTop from "./ScrollToTop";
 
 
 
@@ -20,6 +21,7 @@ function Router() {
 
     <BrowserRouter>
 
+      <ScrollToTop />
 
       <Routes>
 

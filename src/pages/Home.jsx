@@ -9,6 +9,7 @@ import Products from "../components/features/home/Products";
 import FAQ from "../components/features/home/Faq";
 import Newsletter from "../components/features/home/Newsletter";
 import Dapp from "../components/features/home/Dapp";
+import SEO from "../components/common/SEO/SEO";
 
 
 function Home() {
@@ -17,6 +18,11 @@ function Home() {
     return (
 
         <Layout>
+
+            <SEO
+                title="Decentralized Real-World Assets"
+                description="Cowrie Protocol connects real-world assets, DeFi, and community ownership through an open decentralized ecosystem."
+            />
 
 
             <main className="home">

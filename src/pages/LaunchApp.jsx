@@ -1,4 +1,5 @@
 import "./LaunchApp.css";
+import SEO from "../components/common/SEO/SEO";
 
 
 function LaunchApp() {
@@ -7,6 +8,8 @@ function LaunchApp() {
   return (
 
     <main className="launch-app-page">
+
+      <SEO title="Cowrie App" description="The Cowrie App is coming soon, bringing real-world assets, DeFi, and community ownership together." />
 
 
       <section className="launch-app-content">
