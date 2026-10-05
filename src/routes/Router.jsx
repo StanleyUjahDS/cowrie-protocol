@@ -10,6 +10,7 @@ import Docs from "../pages/Docs";
 import About from "../pages/About";
 import Ecosystem from "../pages/Ecosystem";
 import LaunchApp from "../pages/LaunchApp";
+import BlogArticle from "../pages/BlogArticle";
 import ScrollToTop from "./ScrollToTop";
 
 
@@ -55,7 +56,10 @@ function Router() {
           element={<LaunchApp />}
         />
 
-
+        <Route
+          path="/blog/:slug"
+          element={<BlogArticle />}
+        />
       </Routes>
 
 

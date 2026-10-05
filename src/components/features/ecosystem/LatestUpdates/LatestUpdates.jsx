@@ -1,6 +1,7 @@
 import "./LatestUpdates.css";
 
 import {motion} from "framer-motion";
+import {useNavigate} from "react-router-dom";
 
 import RecentCard from "../../../common/cards/RecentCard/RecentCard";
 
@@ -19,6 +20,8 @@ import {
 
 
 function LatestUpdates(){
+
+const navigate = useNavigate();
 
 
 return (
@@ -105,6 +108,8 @@ description={blog.excerpt}
 
 
 button="Read Article"
+
+onClick={() => navigate(`/blog/${blog.slug}`)}
 
 
 />

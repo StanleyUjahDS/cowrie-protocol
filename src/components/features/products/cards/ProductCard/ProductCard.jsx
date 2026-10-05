@@ -17,12 +17,14 @@ function ProductCard({
 
   const downloadOptions = [
     {
-      label: "iOS App",
-      to: "/download/ios"
+      label: "iOS App · App Store",
+      to: "https://apps.apple.com/gb/app/griot/id6809563025",
+      external: true
     },
     {
-      label: "Android App",
-      to: "/download/android"
+      label: "Android App · Google Play",
+      to: "https://play.google.com/store/search?q=Griot&c=apps",
+      external: true
     }
   ];
 
@@ -222,7 +224,12 @@ function ProductCard({
 
         </Button>
 
-
+        {variant === "griot" && (
+          <div className="griot-ecosystem-links">
+            <a href="https://griot.network" target="_blank" rel="noopener noreferrer">Griot Network</a>
+            <a href="https://griot.network/plus" target="_blank" rel="noopener noreferrer">Griot Plus</a>
+          </div>
+        )}
 
       </motion.div>
 

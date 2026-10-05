@@ -5,9 +5,10 @@
 
   <meta charset="UTF-8" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Use the Cowrie mark explicitly so browsers never fall back to the
+       starter Vite favicon during deployment or cache refreshes. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/cowrieLogo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/cowrieLogo.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
@@ -17,6 +18,13 @@
   />
 
   <meta name="theme-color" content="#0b0713" />
+
+  <!-- Google AdSense: Auto ads can select suitable content areas without
+       placing ads over navigation, product CTAs, or interactive controls. -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8536613969303259"
+    crossorigin="anonymous"></script>
 
   <meta
     name="description"
